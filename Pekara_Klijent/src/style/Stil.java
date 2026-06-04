@@ -311,6 +311,13 @@ public class Stil {
     public static void pozadina(java.awt.Container container) {
         container.setBackground(POZADINA);
     }
-    
+
+    public static void tekstualnaZona(javax.swing.JTextArea txtArea) {
+        txtArea.setFont(FONT_NORMAL);
+        txtArea.setForeground(TEKST_TAMNI);
+        txtArea.setBackground(BELA);
+        txtArea.setCaretColor(PLAVA);
+        txtArea.setBorder(BorderFactory.createEmptyBorder(8, 8, 8, 8));
+}
     
 }

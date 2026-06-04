@@ -1,9 +1,6 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package so;
 
+import base.TestBase;
 import model.Kupac;
 import model.KategorijaKupca;
 import model.Pekar;
@@ -13,22 +10,24 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 import so.kupac.KreirajKupac;
 
-public class KreirajKupacTest {
 
-    private KreirajKupac kreirajKupac;
+public class KreirajKupacTest extends TestBase {
+
+    private KreirajKupac soKreiraj;
     private Kupac kupac;
 
     @Before
     public void setUp() {
-        kreirajKupac = new KreirajKupac();
+        soKreiraj = new KreirajKupac();
         kupac = new Kupac();
     }
 
     @After
     public void tearDown() {
-        kreirajKupac = null;
+        soKreiraj = null;
         kupac = null;
     }
+
 
     @Test
     public void testPreconditionIspravan() {
@@ -39,16 +38,16 @@ public class KreirajKupacTest {
         kupac.setEmail("marko@gmail.com");
         kupac.setKategorijaKupca(kk);
         try {
-            kreirajKupac.precondition(kupac);
+            soKreiraj.precondition(kupac);
         } catch (Exception ex) {
-            fail("Nije trebalo da baci izuzetak za ispravan parametar!");
+            fail("Nije trebalo da baci izuzetak za ispravan parametar! " + ex.getMessage());
         }
     }
 
     @Test
     public void testPreconditionNull() {
         try {
-            kreirajKupac.precondition(null);
+            soKreiraj.precondition(null);
             fail("Trebalo je da baci izuzetak!");
         } catch (Exception ex) {
             assertEquals("Parametri nisu validni!", ex.getMessage());
@@ -58,36 +57,36 @@ public class KreirajKupacTest {
     @Test
     public void testPreconditionPogresanTip() {
         try {
-            kreirajKupac.precondition(new Pekar());
+            soKreiraj.precondition(new Pekar());
             fail("Trebalo je da baci izuzetak!");
         } catch (Exception ex) {
             assertEquals("Parametri nisu validni!", ex.getMessage());
         }
     }
 
+
     @Test
-    public void testIzvrsiOperacijuUspesno() {
-        
+    public void testKreirajUspesno() {
+        // KategorijaKupca sa ID=1 postoji u baza_memory.sql (ubacena u setUp)
         KategorijaKupca kk = new KategorijaKupca();
         kk.setIdKategorijaKupca(1);
-        Kupac noviKupac = new Kupac(
-            "Test", "Testovic", "test@test.com", kk);
+        Kupac noviKupac = new Kupac("Nikola", "Nikolic", "nikola@gmail.com", kk);
         try {
-            kreirajKupac.execute(noviKupac);
+            soKreiraj.execute(noviKupac);
+            assertTrue("ID mora biti postavljen nakon kreiranja!", noviKupac.getIdKupac() > 0);
         } catch (Exception ex) {
-            fail("Nije trebalo da baci izuzetak: " + ex.getMessage());
+            fail("Nije trebalo da baci izuzetak pri regularnom kreiranju! " + ex.getMessage());
         }
     }
 
-    @Test
-    public void testIzvrsiOperacijuNeuspesno() {
-
+    @Test(expected = Exception.class)
+    public void testKreirajBezKategorijeBacaIzuzetak() throws Exception {
         Kupac losKupac = new Kupac("X", "Y", "z@z.com", null);
-        try {
-            kreirajKupac.execute(losKupac);
-            fail("Trebalo je da baci izuzetak za kupca bez kategorije!");
-        } catch (Exception ex) {
-            assertNotNull(ex.getMessage());
-        }
+        soKreiraj.execute(losKupac);
+    }
+
+    @Test(expected = Exception.class)
+    public void testKreirajNullBacaIzuzetak() throws Exception {
+        soKreiraj.execute(null);
     }
 }

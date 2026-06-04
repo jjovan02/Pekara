@@ -4,11 +4,19 @@
  */
 package view;
 
+import java.util.Arrays;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+import net.sf.jasperreports.engine.*;
 import model.Racun;
 import model.StavkaRacuna;
 import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
+import net.sf.jasperreports.engine.data.JRBeanCollectionDataSource;
+import net.sf.jasperreports.view.JasperViewer;
 import style.Stil;
+
 /**
  *
  * @author stari
@@ -50,6 +58,7 @@ public class DetaljiRacunaForm extends javax.swing.JDialog {
         jScrollPane2 = new javax.swing.JScrollPane();
         tblStavke = new javax.swing.JTable();
         btnZatvori = new javax.swing.JButton();
+        btnStampaj = new javax.swing.JButton();
 
         jTable1.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -102,14 +111,24 @@ public class DetaljiRacunaForm extends javax.swing.JDialog {
             }
         });
 
+        btnStampaj.setText("Štampaj");
+        btnStampaj.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnStampajActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addGap(18, 18, 18)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(btnZatvori)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(btnStampaj, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(btnZatvori))
                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                         .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 524, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
@@ -145,8 +164,10 @@ public class DetaljiRacunaForm extends javax.swing.JDialog {
                 .addGap(18, 18, 18)
                 .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 303, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
-                .addComponent(btnZatvori)
-                .addContainerGap(89, Short.MAX_VALUE))
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(btnZatvori)
+                    .addComponent(btnStampaj, javax.swing.GroupLayout.PREFERRED_SIZE, 53, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(59, Short.MAX_VALUE))
         );
 
         pack();
@@ -156,9 +177,51 @@ public class DetaljiRacunaForm extends javax.swing.JDialog {
         dispose();
     }//GEN-LAST:event_btnZatvoriActionPerformed
 
+    private void btnStampajActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnStampajActionPerformed
+        System.out.println("Broj stavki u racunu: " + racun.getStavke().size());
+        for (model.StavkaRacuna s : racun.getStavke()) {
+            System.out.println("  -> " + s.getRb() + " | " + s.getNazivPeciva() + " | " + s.getKolicina() + " | " + s.getIznos());
+        }
+        try {
+            Map<String, Object> parametri = new HashMap<>();
+            parametri.put("idRacun",         racun.getIdRacun());
+            parametri.put("datum",           racun.getDatumIzdavanja().toString());
+            parametri.put("pekar",           racun.getPekar().getIme() + " " + racun.getPekar().getPrezime());
+            parametri.put("kupac",           racun.getKupac().getIme() + " " + racun.getKupac().getPrezime());
+            parametri.put("tipPlacanja",     racun.getTipPlacanja());
+            parametri.put("popust",          racun.getPopust());
+            parametri.put("ukupanIznos",     racun.getUkupanIznos());
+            parametri.put("iznosSaPopustom", racun.getIznosSaPopustom());
+
+            // Putanja do report/ foldera
+            parametri.put("SUBREPORT_DIR", "report/");
+
+            // Lista stavki racuna - ovo ide u subreport
+            JRBeanCollectionDataSource stavkeDs = new JRBeanCollectionDataSource(racun.getStavke());
+            parametri.put("SUBREPORT_DATA_SOURCE", stavkeDs);
+
+            List<Object> jednoClanLista = Arrays.asList(new Object());
+            JRBeanCollectionDataSource mainDs =new JRBeanCollectionDataSource(jednoClanLista);
+
+            JasperPrint jprint = JasperFillManager.fillReport("report/Racun.jasper", parametri, mainDs);
+
+            JasperViewer viewer = new JasperViewer(jprint, false);
+            viewer.setTitle("Izveštaj — Račun #" + racun.getIdRacun());
+            viewer.setAlwaysOnTop(true);
+            viewer.setVisible(true);
+            dispose(); 
+
+        } catch (Exception ex) {
+            ex.printStackTrace();
+            JOptionPane.showMessageDialog(this,"Greška pri štampanju izveštaja:\n" + ex.getMessage(), "Greška", JOptionPane.ERROR_MESSAGE);
+        }
+
+    }//GEN-LAST:event_btnStampajActionPerformed
+
    
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btnStampaj;
     private javax.swing.JButton btnZatvori;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
@@ -201,7 +264,8 @@ public class DetaljiRacunaForm extends javax.swing.JDialog {
         Stil.crveno(btnZatvori);
         Stil.tabela(tblStavke);
         Stil.scrollPanel(jScrollPane1);
-        Stil.tabela(tblStavke);    
+        Stil.tabela(tblStavke); 
+        Stil.plavo(btnStampaj);
     }
     
     

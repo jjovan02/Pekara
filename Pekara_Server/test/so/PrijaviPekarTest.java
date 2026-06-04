@@ -1,11 +1,6 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package so;
 
-
-
+import base.TestBase;
 import model.Pekar;
 import org.junit.After;
 import org.junit.Before;
@@ -13,43 +8,40 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 import so.pekar.PrijaviPekar;
 
-/**
- *
- * @author stari
- */
 
-public class PrijaviPekarTest {
+public class PrijaviPekarTest extends TestBase {
 
-    private PrijaviPekar prijaviPekar;
+    private PrijaviPekar soPrijaviPekar;
     private Pekar pekar;
 
     @Before
     public void setUp() {
-        prijaviPekar = new PrijaviPekar();
+        soPrijaviPekar = new PrijaviPekar();
         pekar = new Pekar();
     }
 
     @After
     public void tearDown() {
-        prijaviPekar = null;
+        soPrijaviPekar = null;
         pekar = null;
     }
 
+
     @Test
     public void testPreconditionIspravan() {
-        pekar.setKorisnickoIme("admin");
-        pekar.setLozinka("admin");
+        pekar.setKorisnickoIme("jjovan02");
+        pekar.setLozinka("jovan123");
         try {
-            prijaviPekar.precondition(pekar);
+            soPrijaviPekar.precondition(pekar);
         } catch (Exception ex) {
-            fail("Nije trebalo da baci izuzetak za ispravan parametar!");
+            fail("Nije trebalo da baci izuzetak za ispravan parametar! " + ex.getMessage());
         }
     }
 
     @Test
     public void testPreconditionNull() {
         try {
-            prijaviPekar.precondition(null);
+            soPrijaviPekar.precondition(null);
             fail("Trebalo je da baci izuzetak!");
         } catch (Exception ex) {
             assertEquals("Parametri nisu validni!", ex.getMessage());
@@ -59,35 +51,41 @@ public class PrijaviPekarTest {
     @Test
     public void testPreconditionPogresanTip() {
         try {
-            prijaviPekar.precondition("ovo nije pekar");
+            soPrijaviPekar.precondition("ovo nije Pekar");
             fail("Trebalo je da baci izuzetak!");
         } catch (Exception ex) {
             assertEquals("Parametri nisu validni!", ex.getMessage());
         }
     }
 
+
     @Test
-    public void testIzvrsiOperacijuUspesno() {
+    public void testPrijaviUspesno() {
         pekar.setKorisnickoIme("jjovan02");
         pekar.setLozinka("jovan123");
         try {
-            Pekar rezultat = (Pekar) prijaviPekar.execute(pekar);
-            assertNotNull("Pekar ne sme biti null!", rezultat);
-            assertEquals("jjovan02", rezultat.getKorisnickoIme());
+            Pekar rezultat = (Pekar) soPrijaviPekar.execute(pekar);
+            assertNotNull("Pekar ne sme biti null pri uspesnoj prijavi!", rezultat);
+            assertEquals("Korisnicko ime mora odgovarati!", "jjovan02", rezultat.getKorisnickoIme());
         } catch (Exception ex) {
-            fail("Nije trebalo da baci izuzetak: " + ex.getMessage());
+            fail("Nije trebalo da baci izuzetak pri ispravnim kredencijalima! " + ex.getMessage());
         }
     }
 
     @Test
-    public void testIzvrsiOperacijuNeuspesno() {
+    public void testPrijaviPogresniKredencijali() {
         pekar.setKorisnickoIme("nepostojeci_korisnik");
         pekar.setLozinka("pogresna_lozinka");
         Pekar rezultat = null;
         try {
-            rezultat = (Pekar) prijaviPekar.execute(pekar);
+            rezultat = (Pekar) soPrijaviPekar.execute(pekar);
         } catch (Exception ex) {
         }
         assertNull("Pekar mora biti null za neispravne podatke!", rezultat);
+    }
+
+    @Test(expected = Exception.class)
+    public void testPrijaviNullBacaIzuzetak() throws Exception {
+        soPrijaviPekar.execute(null);
     }
 }

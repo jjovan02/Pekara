@@ -53,12 +53,13 @@ public class MainForm extends javax.swing.JFrame {
         miPecivo = new javax.swing.JMenuItem();
         miSertifikat = new javax.swing.JMenuItem();
         miKategorijaKupca = new javax.swing.JMenuItem();
+        menuAI = new javax.swing.JMenu();
+        miAIPreporuka = new javax.swing.JMenuItem();
         menuOProgramu = new javax.swing.JMenu();
         miOProgramu = new javax.swing.JMenuItem();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Pekara");
-        setPreferredSize(new java.awt.Dimension(900, 600));
         setResizable(false);
 
         pnlHeader.setBackground(new java.awt.Color(26, 58, 92));
@@ -175,7 +176,19 @@ public class MainForm extends javax.swing.JFrame {
 
         jMenuBar1.add(menuSifarnici);
 
-        menuOProgramu.setText("5. O programu");
+        menuAI.setText("5. AI Asistent");
+
+        miAIPreporuka.setText("Preporuka količina");
+        miAIPreporuka.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                miAIPreporukaActionPerformed(evt);
+            }
+        });
+        menuAI.add(miAIPreporuka);
+
+        jMenuBar1.add(menuAI);
+
+        menuOProgramu.setText("6. O programu");
         menuOProgramu.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 menuOProgramuActionPerformed(evt);
@@ -277,9 +290,13 @@ public class MainForm extends javax.swing.JFrame {
         "Softverski sistem za praćenje rada pekare\n" +
         "Autor: Jovan Janjušević\n" +
         "Broj indeksa: 2021/0172\n" +
-        "Mentor: prof. dr Siniša Vlajić",
+        "Mentor: prof. Miloš Milić",
         "O programu", JOptionPane.INFORMATION_MESSAGE);
     }//GEN-LAST:event_miOProgramuActionPerformed
+
+    private void miAIPreporukaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_miAIPreporukaActionPerformed
+        new AIPreporukaForm().setVisible(true);
+    }//GEN-LAST:event_miAIPreporukaActionPerformed
 
     
 
@@ -293,11 +310,13 @@ public class MainForm extends javax.swing.JFrame {
     private javax.swing.JLabel lblInfo2;
     private javax.swing.JLabel lblInfo3;
     private javax.swing.JLabel lblNazivSistema;
+    private javax.swing.JMenu menuAI;
     private javax.swing.JMenu menuDokumenti;
     private javax.swing.JMenu menuOProgramu;
     private javax.swing.JMenu menuPrimalac;
     private javax.swing.JMenu menuPruzalac;
     private javax.swing.JMenu menuSifarnici;
+    private javax.swing.JMenuItem miAIPreporuka;
     private javax.swing.JMenuItem miKategorijaKupca;
     private javax.swing.JMenuItem miKupac;
     private javax.swing.JMenuItem miOProgramu;

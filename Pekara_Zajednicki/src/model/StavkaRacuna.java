@@ -187,4 +187,16 @@ public class StavkaRacuna implements OpstiDomenskiObjekat, Serializable {
         return "sr.*, p.naziv AS nazivPecivo, p.cena AS cenaPecivo, p.opis, p.rokTrajanja";
     }
     
+    public String getNazivPeciva() {
+        if (pecivo == null) return "";
+        String naziv = pecivo.getNaziv();
+        return naziv != null ? naziv : "";
+    }
+
+    public double getCenaPeciva() {
+        return pecivo != null ? pecivo.getCena() : 0.0;
+    }
+    
+    
+    
 }

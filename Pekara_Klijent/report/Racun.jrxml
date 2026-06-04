@@ -1,0 +1,85 @@
+<!-- Created with Jaspersoft Studio version 7.0.6.final using JasperReports Library version 7.0.6-5d2a603fdc6b3db8f842a83383e594f41891534d  -->
+<jasperReport name="Racun" language="java" columnCount="1" pageWidth="595" pageHeight="842" orientation="Landscape" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="13635c46-2199-4073-819e-040d75585c86">
+	<property name="com.jaspersoft.studio.unit." value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.pageHeight" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.pageWidth" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.topMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.bottomMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.leftMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.rightMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.columnWidth" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.columnSpacing" value="pixel"/>
+	<parameter name="idRacun" class="java.lang.Integer"/>
+	<parameter name="datum" class="java.lang.String"/>
+	<parameter name="pekar" class="java.lang.String"/>
+	<parameter name="kupac" class="java.lang.String"/>
+	<parameter name="tipPlacanja" class="java.lang.String"/>
+	<parameter name="popust" class="java.lang.Integer"/>
+	<parameter name="ukupanIznos" class="java.lang.Double"/>
+	<parameter name="iznosSaPopustom" class="java.lang.Double"/>
+	<parameter name="Parameter1" class="java.lang.String"/>
+	<parameter name="SUBREPORT_DIR" class="java.lang.String"/>
+	<parameter name="SUBREPORT_DATA_SOURCE" class="net.sf.jasperreports.engine.data.JRBeanCollectionDataSource"/>
+	<query language="sql"><![CDATA[]]></query>
+	<background splitType="Stretch"/>
+	<title height="111" splitType="Stretch">
+		<element kind="staticText" uuid="675edb71-68b5-4e76-9067-52195eb2f8dd" x="0" y="0" width="80" height="19" fontSize="14.0">
+			<text><![CDATA[Broj računa:]]></text>
+		</element>
+		<element kind="textField" uuid="71844a50-44eb-46c1-aa62-49f0903214fc" x="80" y="0" width="100" height="19" fontSize="14.0">
+			<expression><![CDATA[$P{idRacun}]]></expression>
+		</element>
+		<element kind="staticText" uuid="bd6d2025-ea9b-42e3-9f79-b4eb7bf80d59" x="400" y="0" width="50" height="19" fontSize="14.0">
+			<text><![CDATA[Datum:]]></text>
+		</element>
+		<element kind="staticText" uuid="b3eea16d-0446-407c-af68-7cf34c78a194" x="0" y="40" width="40" height="19">
+			<text><![CDATA[Pekar:]]></text>
+		</element>
+		<element kind="staticText" uuid="bc39d246-503c-455a-9652-5ce6f3cdd05d" x="0" y="60" width="40" height="19">
+			<text><![CDATA[Kupac:]]></text>
+		</element>
+		<element kind="staticText" uuid="3228e65f-fefb-47df-89c0-75d6c816b7e6" x="0" y="80" width="60" height="19">
+			<text><![CDATA[Tip plaćanja:]]></text>
+		</element>
+		<element kind="textField" uuid="e3a2df0b-f417-4ceb-a065-4442343fc8cd" x="40" y="40" width="140" height="19">
+			<expression><![CDATA[$P{pekar}]]></expression>
+		</element>
+		<element kind="textField" uuid="b0ce9efc-260b-4db8-9a59-1ec11605e6ab" x="40" y="60" width="140" height="19">
+			<expression><![CDATA[$P{kupac}]]></expression>
+		</element>
+		<element kind="textField" uuid="ea1e9ced-26fc-4aba-a567-a6dcf0a75f4c" x="60" y="80" width="120" height="19">
+			<expression><![CDATA[$P{tipPlacanja}]]></expression>
+		</element>
+		<element kind="textField" uuid="dfb4f3d3-2ebd-4a14-aed6-e97b45dd16c2" x="450" y="0" width="100" height="19" fontSize="14.0" italic="true">
+			<expression><![CDATA[$P{datum}]]></expression>
+		</element>
+	</title>
+	<detail>
+		<band height="423" splitType="Stretch">
+			<element kind="subreport" uuid="b3af55d0-ce15-4a9f-adc6-f854439cbff4" x="0" y="10" width="549" height="400">
+				<dataSourceExpression><![CDATA[(net.sf.jasperreports.engine.data.JRBeanCollectionDataSource)$P{SUBREPORT_DATA_SOURCE}]]></dataSourceExpression>
+				<expression><![CDATA[$P{SUBREPORT_DIR} + "StavkaRacuna.jasper"]]></expression>
+			</element>
+		</band>
+	</detail>
+	<summary height="50">
+		<element kind="staticText" uuid="dba12bee-70ea-4b01-96a0-fe51ecf5558d" x="190" y="16" width="60" height="19">
+			<text><![CDATA[Popust (%):]]></text>
+		</element>
+		<element kind="staticText" uuid="4f2fd03c-abf0-4b83-8ebe-2648ff966c1b" x="0" y="16" width="70" height="19">
+			<text><![CDATA[Ukupan iznos:]]></text>
+		</element>
+		<element kind="staticText" uuid="af9bbd23-b685-42b3-86b7-82c024a84704" x="350" y="16" width="100" height="19" bold="true">
+			<text><![CDATA[Iznos sa popustom:]]></text>
+		</element>
+		<element kind="textField" uuid="a5b8d568-158d-4fde-9477-5a325dfe95fd" x="250" y="16" width="40" height="19">
+			<expression><![CDATA[$P{popust}]]></expression>
+		</element>
+		<element kind="textField" uuid="084f16c7-f9be-4fe1-840c-457709e3f942" x="70" y="16" width="90" height="19">
+			<expression><![CDATA[$P{ukupanIznos}]]></expression>
+		</element>
+		<element kind="textField" uuid="05485ab1-062e-45ce-b3fb-c841e469847d" x="450" y="16" width="100" height="19" bold="true">
+			<expression><![CDATA[$P{iznosSaPopustom}]]></expression>
+		</element>
+	</summary>
+</jasperReport>

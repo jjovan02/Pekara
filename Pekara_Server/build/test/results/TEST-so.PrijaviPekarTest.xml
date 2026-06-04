@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite errors="0" failures="0" hostname="Lenovo" name="so.PrijaviPekarTest" skipped="0" tests="5" time="0.327" timestamp="2026-03-15T01:26:06">
+<testsuite errors="0" failures="0" hostname="Lenovo" name="so.PrijaviPekarTest" skipped="0" tests="6" time="0.511" timestamp="2026-05-31T19:57:27">
   <properties>
-    <property name="javac.test.classpath" value="../Pekara_Zajednicki/dist/Pekara_Zajednicki.jar:../mysql-connector-j-9.1.0.jar:build/classes:C:\Program Files\NetBeans-23\netbeans\platform\modules\ext\junit-4.13.2.jar:C:\Program Files\NetBeans-23\netbeans\platform\modules\ext\hamcrest-core-1.3.jar" />
+    <property name="javac.test.classpath" value="../Pekara_Zajednicki/dist/Pekara_Zajednicki.jar:../hsqldb.jar:../mysql-connector-j-9.1.0.jar:build/classes:C:\Program Files\NetBeans-23\netbeans\platform\modules\ext\junit-4.13.2.jar:C:\Program Files\NetBeans-23\netbeans\platform\modules\ext\hamcrest-core-1.3.jar:../hamcrest-core-1.3.jar:../hsqldb.jar" />
     <property name="java.specification.version" value="23" />
     <property name="libs.spring-framework500.classpath" value="C:\Program Files\NetBeans-23\netbeans\platform\modules\org-apache-commons-logging.jar;C:\Program Files\NetBeans-23\netbeans\java\modules\ext\cglib-2.2.jar;C:\Program Files\NetBeans-23\netbeans\java\modules\ext\spring-5\spring-aop-5.3.31.jar;C:\Program Files\NetBeans-23\netbeans\java\modules\ext\spring-5\spring-aspects-5.3.31.jar;C:\Program Files\NetBeans-23\netbeans\java\modules\ext\spring-5\spring-beans-5.3.31.jar;C:\Program Files\NetBeans-23\netbeans\java\modules\ext\spring-5\spring-context-5.3.31.jar;C:\Program Files\NetBeans-23\netbeans\java\modules\ext\spring-5\spring-context-indexer-5.3.31.jar;C:\Program Files\NetBeans-23\netbeans\java\modules\ext\spring-5\spring-context-support-5.3.31.jar;C:\Program Files\NetBeans-23\netbeans\java\modules\ext\spring-5\spring-core-5.3.31.jar;C:\Program Files\NetBeans-23\netbeans\java\modules\ext\spring-5\spring-expression-5.3.31.jar;C:\Program Files\NetBeans-23\netbeans\java\modules\ext\spring-5\spring-instrument-5.3.31.jar;C:\Program Files\NetBeans-23\netbeans\java\modules\ext\spring-5\spring-jcl-5.3.31.jar;C:\Program Files\NetBeans-23\netbeans\java\modules\ext\spring-5\spring-jdbc-5.3.31.jar;C:\Program Files\NetBeans-23\netbeans\java\modules\ext\spring-5\spring-jms-5.3.31.jar;C:\Program Files\NetBeans-23\netbeans\java\modules\ext\spring-5\spring-messaging-5.3.31.jar;C:\Program Files\NetBeans-23\netbeans\java\modules\ext\spring-5\spring-orm-5.3.31.jar;C:\Program Files\NetBeans-23\netbeans\java\modules\ext\spring-5\spring-oxm-5.3.31.jar;C:\Program Files\NetBeans-23\netbeans\java\modules\ext\spring-5\spring-test-5.3.31.jar;C:\Program Files\NetBeans-23\netbeans\java\modules\ext\spring-5\spring-tx-5.3.31.jar;C:\Program Files\NetBeans-23\netbeans\java\modules\ext\spring-5\spring-web-5.3.31.jar;C:\Program Files\NetBeans-23\netbeans\java\modules\ext\spring-5\spring-webflux-5.3.31.jar;C:\Program Files\NetBeans-23\netbeans\java\modules\ext\spring-5\spring-webmvc-5.3.31.jar;C:\Program Files\NetBeans-23\netbeans\java\modules\ext\spring-5\spring-websocket-5.3.31.jar" />
     <property name="jar.index.metainf" value="false" />
@@ -15,13 +15,13 @@
     <property name="libs.eclipselink.javadoc" value="C:\Program Files\NetBeans-23\netbeans\java\modules\ext\docs\jakarta.persistence-2.2.3-doc.zip" />
     <property name="libs.JWSAntTasks.javadoc" value="" />
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-23\bin" />
-    <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner so.PrijaviPekarTest skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false showoutput=true outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=true formatter=org.apache.tools.ant.taskdefs.optional.junit.BriefJUnitResultFormatter formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,C:\Users\jovan\OneDrive\Documenti\NetBeansProjects\Pekara_Server\build\test\results\TEST-so.PrijaviPekarTest.xml crashfile=C:\Users\jovan\OneDrive\Documenti\NetBeansProjects\Pekara_Server\build\junitvmwatcher1389549535402454850.properties propsfile=C:\Users\jovan\OneDrive\Documenti\NetBeansProjects\Pekara_Server\build\junit15793540262769956345.properties" />
+    <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner so.PrijaviPekarTest skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false showoutput=true outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=true formatter=org.apache.tools.ant.taskdefs.optional.junit.BriefJUnitResultFormatter formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,C:\Users\jovan\OneDrive\Documenti\NetBeansProjects\Softveri\Pekara_Server\build\test\results\TEST-so.PrijaviPekarTest.xml crashfile=C:\Users\jovan\OneDrive\Documenti\NetBeansProjects\Softveri\Pekara_Server\build\junitvmwatcher10299817635198823295.properties propsfile=C:\Users\jovan\OneDrive\Documenti\NetBeansProjects\Softveri\Pekara_Server\build\junit4758654606727914686.properties" />
     <property name="jdk.debug" value="release" />
     <property name="javadoc.use" value="true" />
     <property name="javadoc.notree" value="false" />
-    <property name="basedir" value="C:\Users\jovan\OneDrive\Documenti\NetBeansProjects\Pekara_Server" />
+    <property name="basedir" value="C:\Users\jovan\OneDrive\Documenti\NetBeansProjects\Softveri\Pekara_Server" />
     <property name="application.vendor" value="stari" />
-    <property name="ant.file.Pekara_Server" value="C:\Users\jovan\OneDrive\Documenti\NetBeansProjects\Pekara_Server\build.xml" />
+    <property name="ant.file.Pekara_Server" value="C:\Users\jovan\OneDrive\Documenti\NetBeansProjects\Softveri\Pekara_Server\build.xml" />
     <property name="java.vm.specification.vendor" value="Oracle Corporation" />
     <property name="java.specification.name" value="Java Platform API Specification" />
     <property name="libs.jsf20.classpath" value="C:\Program Files\NetBeans-23\netbeans\enterprise\modules\ext\jsf-2_2\javax.faces.jar" />
@@ -61,9 +61,9 @@
     <property name="jlink.additionalparam" value="" />
     <property name="libs.testng.maven-pom" value="" />
     <property name="org.openide.version" value="deprecated" />
-    <property name="run.classpath" value="../Pekara_Zajednicki/dist/Pekara_Zajednicki.jar:../mysql-connector-j-9.1.0.jar:build/classes" />
+    <property name="run.classpath" value="../Pekara_Zajednicki/dist/Pekara_Zajednicki.jar:../hsqldb.jar:../mysql-connector-j-9.1.0.jar:build/classes" />
     <property name="libs.jaxb.src" value="" />
-    <property name="ant.file.Pekara_Server-impl" value="C:\Users\jovan\OneDrive\Documenti\NetBeansProjects\Pekara_Server\nbproject\build-impl.xml" />
+    <property name="ant.file.Pekara_Server-impl" value="C:\Users\jovan\OneDrive\Documenti\NetBeansProjects\Softveri\Pekara_Server\nbproject\build-impl.xml" />
     <property name="sun.awt.enableExtraMouseButtons" value="true" />
     <property name="test.src.dir" value="test" />
     <property name="org.openide.major.version" value="IDE/1" />
@@ -129,6 +129,7 @@
     <property name="user.country.format" value="RS" />
     <property name="libs.PostgreSQLDriver.maven-pom" value="" />
     <property name="libs.absolutelayout.src" value="" />
+    <property name="file.reference.hsqldb.jar" value="../hsqldb.jar" />
     <property name="libs.jakartaee-api-11.0.classpath" value="C:\Program Files\NetBeans-23\netbeans\enterprise\modules\ext\jakarta.jakartaee-api-11.0.0.jar" />
     <property name="testng.mode" value="testng" />
     <property name="annotation.processing.enabled.in.editor" value="false" />
@@ -154,12 +155,12 @@
     <property name="sun.os.patch.level" value="" />
     <property name="libs.jakartaee-api-11.0.javadoc" value="C:\Program Files\NetBeans-23\netbeans\enterprise\docs\jakartaee11-doc-api.jar" />
     <property name="javadoc.html5" value="false" />
-    <property name="javac.test.processorpath" value="../Pekara_Zajednicki/dist/Pekara_Zajednicki.jar:../mysql-connector-j-9.1.0.jar:build/classes:C:\Program Files\NetBeans-23\netbeans\platform\modules\ext\junit-4.13.2.jar:C:\Program Files\NetBeans-23\netbeans\platform\modules\ext\hamcrest-core-1.3.jar" />
+    <property name="javac.test.processorpath" value="../Pekara_Zajednicki/dist/Pekara_Zajednicki.jar:../hsqldb.jar:../mysql-connector-j-9.1.0.jar:build/classes:C:\Program Files\NetBeans-23\netbeans\platform\modules\ext\junit-4.13.2.jar:C:\Program Files\NetBeans-23\netbeans\platform\modules\ext\hamcrest-core-1.3.jar:../hamcrest-core-1.3.jar:../hsqldb.jar" />
     <property name="libs.javaee-web-api-7.0.maven-pom" value="" />
     <property name="libs.javaee-web-api-8.0.maven-pom" value="" />
     <property name="netbeans.dirs" value="C:\Program Files\NetBeans-23\netbeans\nb;C:\Program Files\NetBeans-23\netbeans\ergonomics;C:\Program Files\NetBeans-23\netbeans\ide;C:\Program Files\NetBeans-23\netbeans\extide;C:\Program Files\NetBeans-23\netbeans\java;C:\Program Files\NetBeans-23\netbeans\apisupport;C:\Program Files\NetBeans-23\netbeans\webcommon;C:\Program Files\NetBeans-23\netbeans\websvccommon;C:\Program Files\NetBeans-23\netbeans\enterprise;C:\Program Files\NetBeans-23\netbeans\mobility;C:\Program Files\NetBeans-23\netbeans\profiler;C:\Program Files\NetBeans-23\netbeans\python;C:\Program Files\NetBeans-23\netbeans\php;C:\Program Files\NetBeans-23\netbeans\identity;C:\Program Files\NetBeans-23\netbeans\harness;C:\Program Files\NetBeans-23\netbeans\cnd;C:\Program Files\NetBeans-23\netbeans\cndext;C:\Program Files\NetBeans-23\netbeans\cpplite;C:\Program Files\NetBeans-23\netbeans\dlight;C:\Program Files\NetBeans-23\netbeans\groovy;C:\Program Files\NetBeans-23\netbeans\extra;C:\Program Files\NetBeans-23\netbeans\javacard;C:\Program Files\NetBeans-23\netbeans\javafx;C:\Program Files\NetBeans-23\netbeans\rust" />
     <property name="libs.hamcrest.maven-pom" value="" />
-    <property name="javac.processorpath" value="../Pekara_Zajednicki/dist/Pekara_Zajednicki.jar:../mysql-connector-j-9.1.0.jar" />
+    <property name="javac.processorpath" value="../Pekara_Zajednicki/dist/Pekara_Zajednicki.jar:../hsqldb.jar:../mysql-connector-j-9.1.0.jar" />
     <property name="libs.javaee-api-6.0.javadoc" value="C:\Program Files\NetBeans-23\netbeans\enterprise\docs\javaee-doc-api.jar" />
     <property name="libs.JWSAntTasks.maven-pom" value="" />
     <property name="run.modulepath" value="" />
@@ -172,8 +173,9 @@
     <property name="libs.jpa20-persistence.src" value="" />
     <property name="libs.restapi.javadoc" value="" />
     <property name="endorsed.classpath" value="" />
-    <property name="javac.test.sourcepath" value="C:\Users\jovan\OneDrive\Documenti\NetBeansProjects\Pekara_Server\build\empty" />
+    <property name="javac.test.sourcepath" value="C:\Users\jovan\OneDrive\Documenti\NetBeansProjects\Softveri\Pekara_Server\build\empty" />
     <property name="includes" value="**" />
+    <property name="file.reference.hamcrest-core-1.3.jar" value="../hamcrest-core-1.3.jar" />
     <property name="libs.hamcrest.classpath" value="C:\Program Files\NetBeans-23\netbeans\platform\modules\ext\hamcrest-core-1.3.jar" />
     <property name="javadoc.splitindex" value="true" />
     <property name="libs.JWSAntTasks.classpath" value="C:\Program Files\NetBeans-23\netbeans\java\ant\extra\org-netbeans-modules-javawebstart-anttasks.jar" />
@@ -224,7 +226,7 @@
     <property name="java.specification.vendor" value="Oracle Corporation" />
     <property name="java.version.date" value="2024-10-15" />
     <property name="java.home" value="C:\Program Files\Java\jdk-23" />
-    <property name="work.dir" value="C:\Users\jovan\OneDrive\Documenti\NetBeansProjects\Pekara_Server" />
+    <property name="work.dir" value="C:\Users\jovan\OneDrive\Documenti\NetBeansProjects\Softveri\Pekara_Server" />
     <property name="jna.boot.library.name" value="jnidispatch-nb" />
     <property name="javac.test.compilerargs" value="" />
     <property name="libs.PostgreSQLDriver.classpath" value="C:\Program Files\NetBeans-23\netbeans\ide\modules\ext\postgresql-42.5.4.jar" />
@@ -244,7 +246,7 @@
     <property name="libs.restlib.javadoc" value="" />
     <property name="libs.absolutelayout.classpath" value="C:\Program Files\NetBeans-23\netbeans\java\modules\ext\AbsoluteLayout.jar" />
     <property name="do.archive" value="true" />
-    <property name="built-jar.properties" value="C:\Users\jovan\OneDrive\Documenti\NetBeansProjects\Pekara_Server\build\built-jar.properties" />
+    <property name="built-jar.properties" value="C:\Users\jovan\OneDrive\Documenti\NetBeansProjects\Softveri\Pekara_Server\build\built-jar.properties" />
     <property name="nb.native.filechooser" value="false" />
     <property name="libs.testng.src" value="" />
     <property name="libs.javaee-web-api-8.0.classpath" value="C:\Program Files\NetBeans-23\netbeans\enterprise\modules\ext\javaee-web-api-8.0.jar" />
@@ -283,7 +285,7 @@
     <property name="run.jvmargs" value="" />
     <property name="libs.primefaces.src" value="" />
     <property name="user.script.format" value="Latn" />
-    <property name="ant.file" value="C:\Users\jovan\OneDrive\Documenti\NetBeansProjects\Pekara_Server\build.xml" />
+    <property name="ant.file" value="C:\Users\jovan\OneDrive\Documenti\NetBeansProjects\Softveri\Pekara_Server\build.xml" />
     <property name="stdout.encoding" value="Cp1252" />
     <property name="path.separator" value=";" />
     <property name="libs.JAXB-ENDORSED.classpath" value="C:\Program Files\NetBeans-23\netbeans\ide\modules\ext\jaxb\api\jaxb-api.jar" />
@@ -300,12 +302,12 @@
     <property name="java.vm.info" value="mixed mode, sharing" />
     <property name="libs.primefaces.classpath" value="C:\Program Files\NetBeans-23\netbeans\enterprise\modules\ext\primefaces\primefaces-5.0.jar" />
     <property name="libs.jaxws21.maven-pom" value="" />
-    <property name="run.test.classpath" value="../Pekara_Zajednicki/dist/Pekara_Zajednicki.jar:../mysql-connector-j-9.1.0.jar:build/classes:C:\Program Files\NetBeans-23\netbeans\platform\modules\ext\junit-4.13.2.jar:C:\Program Files\NetBeans-23\netbeans\platform\modules\ext\hamcrest-core-1.3.jar:build/test/classes" />
+    <property name="run.test.classpath" value="../Pekara_Zajednicki/dist/Pekara_Zajednicki.jar:../hsqldb.jar:../mysql-connector-j-9.1.0.jar:build/classes:C:\Program Files\NetBeans-23\netbeans\platform\modules\ext\junit-4.13.2.jar:C:\Program Files\NetBeans-23\netbeans\platform\modules\ext\hamcrest-core-1.3.jar:../hamcrest-core-1.3.jar:../hsqldb.jar:build/test/classes:../hamcrest-core-1.3.jar:../hsqldb.jar" />
     <property name="dist.jlink.output" value="dist/jlink/Pekara_Server" />
     <property name="java.class.version" value="67.0" />
     <property name="javadoc.encoding.used" value="UTF-8" />
     <property name="src.dir" value="src" />
-    <property name="debug.classpath" value="../Pekara_Zajednicki/dist/Pekara_Zajednicki.jar:../mysql-connector-j-9.1.0.jar:build/classes" />
+    <property name="debug.classpath" value="../Pekara_Zajednicki/dist/Pekara_Zajednicki.jar:../hsqldb.jar:../mysql-connector-j-9.1.0.jar:build/classes" />
     <property name="ant.project.default-target" value="default" />
     <property name="excludes" value="" />
     <property name="libs.javaee-api-7.0.src" value="" />
@@ -317,7 +319,7 @@
     <property name="libs.jsf20.javadoc" value="C:\Program Files\NetBeans-23\netbeans\enterprise\docs\javaee-doc-api.jar" />
     <property name="netbeans.importclass" value="org.netbeans.upgrade.AutoUpgrade" />
     <property name="netbeans.autoupdate.version" value="1.23" />
-    <property name="empty.dir" value="C:\Users\jovan\OneDrive\Documenti\NetBeansProjects\Pekara_Server\build\empty" />
+    <property name="empty.dir" value="C:\Users\jovan\OneDrive\Documenti\NetBeansProjects\Softveri\Pekara_Server\build\empty" />
     <property name="libs.jakartaee-api-10.0.classpath" value="C:\Program Files\NetBeans-23\netbeans\enterprise\modules\ext\jakarta.jakartaee-api-10.0.0.jar" />
     <property name="netbeans.user" value="C:\Users\jovan\AppData\Roaming\NetBeans\23" />
     <property name="file.separator" value="\" />
@@ -345,7 +347,7 @@
     <property name="libs.JWSAntTasks.src" value="" />
     <property name="file.reference.mysql-connector-j-9.1.0.jar" value="../mysql-connector-j-9.1.0.jar" />
     <property name="ant.home" value="C:\Program Files\NetBeans-23\netbeans\extide\ant" />
-    <property name="debug.test.classpath" value="../Pekara_Zajednicki/dist/Pekara_Zajednicki.jar:../mysql-connector-j-9.1.0.jar:build/classes:C:\Program Files\NetBeans-23\netbeans\platform\modules\ext\junit-4.13.2.jar:C:\Program Files\NetBeans-23\netbeans\platform\modules\ext\hamcrest-core-1.3.jar:build/test/classes" />
+    <property name="debug.test.classpath" value="../Pekara_Zajednicki/dist/Pekara_Zajednicki.jar:../hsqldb.jar:../mysql-connector-j-9.1.0.jar:build/classes:C:\Program Files\NetBeans-23\netbeans\platform\modules\ext\junit-4.13.2.jar:C:\Program Files\NetBeans-23\netbeans\platform\modules\ext\hamcrest-core-1.3.jar:../hamcrest-core-1.3.jar:../hsqldb.jar:build/test/classes:../hamcrest-core-1.3.jar:../hsqldb.jar" />
     <property name="have.tests" value="true" />
     <property name="javac.external.vm" value="true" />
     <property name="testng.debug.mode" value="" />
@@ -359,7 +361,7 @@
     <property name="libs.javaee-api-6.0.src" value="" />
     <property name="netbeans.autoupdate.country" value="US" />
     <property name="nb.wait.for.caches" value="true" />
-    <property name="java.class.path" value="C:\Users\jovan\OneDrive\Documenti\NetBeansProjects\Pekara_Zajednicki\dist\Pekara_Zajednicki.jar;C:\Users\jovan\OneDrive\Documenti\NetBeansProjects\mysql-connector-j-9.1.0.jar;C:\Users\jovan\OneDrive\Documenti\NetBeansProjects\Pekara_Server\build\classes;C:\Program Files\NetBeans-23\netbeans\platform\modules\ext\junit-4.13.2.jar;C:\Program Files\NetBeans-23\netbeans\platform\modules\ext\hamcrest-core-1.3.jar;C:\Users\jovan\OneDrive\Documenti\NetBeansProjects\Pekara_Server\build\test\classes;C:\Program Files\NetBeans-23\netbeans\extide\ant\lib\ant-launcher.jar;C:\Program Files\NetBeans-23\netbeans\extide\ant\lib\ant.jar;C:\Program Files\NetBeans-23\netbeans\extide\ant\lib\ant-junit.jar;C:\Program Files\NetBeans-23\netbeans\extide\ant\lib\ant-junit4.jar" />
+    <property name="java.class.path" value="C:\Users\jovan\OneDrive\Documenti\NetBeansProjects\Softveri\Pekara_Zajednicki\dist\Pekara_Zajednicki.jar;C:\Users\jovan\OneDrive\Documenti\NetBeansProjects\Softveri\hsqldb.jar;C:\Users\jovan\OneDrive\Documenti\NetBeansProjects\Softveri\mysql-connector-j-9.1.0.jar;C:\Users\jovan\OneDrive\Documenti\NetBeansProjects\Softveri\Pekara_Server\build\classes;C:\Program Files\NetBeans-23\netbeans\platform\modules\ext\junit-4.13.2.jar;C:\Program Files\NetBeans-23\netbeans\platform\modules\ext\hamcrest-core-1.3.jar;C:\Users\jovan\OneDrive\Documenti\NetBeansProjects\Softveri\hamcrest-core-1.3.jar;C:\Users\jovan\OneDrive\Documenti\NetBeansProjects\Softveri\Pekara_Server\build\test\classes;C:\Program Files\NetBeans-23\netbeans\extide\ant\lib\ant-launcher.jar;C:\Program Files\NetBeans-23\netbeans\extide\ant\lib\ant.jar;C:\Program Files\NetBeans-23\netbeans\extide\ant\lib\ant-junit.jar;C:\Program Files\NetBeans-23\netbeans\extide\ant\lib\ant-junit4.jar" />
     <property name="libs.javaee-web-api-6.0.maven-pom" value="" />
     <property name="java.vm.vendor" value="Oracle Corporation" />
     <property name="ap.supported.internal" value="true" />
@@ -392,7 +394,7 @@
     <property name="jlink.additionalmodules" value="" />
     <property name="libs.jakartaee-web-api-10.0.javadoc" value="C:\Program Files\NetBeans-23\netbeans\enterprise\docs\jakartaee10-doc-api.jar" />
     <property name="libs.jakartaee-web-api-8.0.classpath" value="C:\Program Files\NetBeans-23\netbeans\enterprise\modules\ext\jakarta.jakartaee-web-api-8.0.0.jar" />
-    <property name="javac.classpath" value="../Pekara_Zajednicki/dist/Pekara_Zajednicki.jar:../mysql-connector-j-9.1.0.jar" />
+    <property name="javac.classpath" value="../Pekara_Zajednicki/dist/Pekara_Zajednicki.jar:../hsqldb.jar:../mysql-connector-j-9.1.0.jar" />
     <property name="dist.jlink.dir" value="dist/jlink" />
     <property name="nb.junit.batch" value="true" />
     <property name="libs.jakartaee-web-api-10.0.maven-pom" value="" />
@@ -403,7 +405,7 @@
     <property name="libs.PostgreSQLDriver.src" value="" />
     <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/" />
     <property name="annotation.processing.source.output" value="build/generated-sources/ap-source-output" />
-    <property name="user.dir" value="C:\Users\jovan\OneDrive\Documenti\NetBeansProjects\Pekara_Server" />
+    <property name="user.dir" value="C:\Users\jovan\OneDrive\Documenti\NetBeansProjects\Softveri\Pekara_Server" />
     <property name="libs.javaee-endorsed-api-6.0.maven-pom" value="" />
     <property name="platform.java" value="C:\Program Files\Java\jdk-23/bin/java" />
     <property name="application.args" value="" />
@@ -422,14 +424,17 @@
     <property name="libs.jsp-compiler.classpath" value="C:\Program Files\NetBeans-23\netbeans\enterprise\ant\extra\jspcompile.jar" />
     <property name="libs.javaee-endorsed-api-6.0.classpath" value="C:\Program Files\NetBeans-23\netbeans\enterprise\modules\ext\javaee6-endorsed\javax.annotation.jar;C:\Program Files\NetBeans-23\netbeans\enterprise\modules\ext\javaee6-endorsed\jaxb-api-osgi.jar;C:\Program Files\NetBeans-23\netbeans\enterprise\modules\ext\javaee6-endorsed\webservices-api-osgi.jar" />
   </properties>
-  <testcase classname="so.PrijaviPekarTest" name="testPreconditionPogresanTip" time="0.007" />
+  <testcase classname="so.PrijaviPekarTest" name="testPreconditionPogresanTip" time="0.006" />
   <testcase classname="so.PrijaviPekarTest" name="testPreconditionNull" time="0.001" />
-  <testcase classname="so.PrijaviPekarTest" name="testIzvrsiOperacijuNeuspesno" time="0.213" />
-  <testcase classname="so.PrijaviPekarTest" name="testIzvrsiOperacijuUspesno" time="0.002" />
-  <testcase classname="so.PrijaviPekarTest" name="testPreconditionIspravan" time="0.0" />
+  <testcase classname="so.PrijaviPekarTest" name="testPrijaviPogresniKredencijali" time="0.006" />
+  <testcase classname="so.PrijaviPekarTest" name="testPreconditionIspravan" time="0.001" />
+  <testcase classname="so.PrijaviPekarTest" name="testPrijaviUspesno" time="0.002" />
+  <testcase classname="so.PrijaviPekarTest" name="testPrijaviNullBacaIzuzetak" time="0.001" />
   <system-out><![CDATA[Uspesno povezivanje sa bazom
+Memorijska baza uspesno inicijalizovana.
 Operacija nije uspjesno izvrsena
 Uspesno izvrsena operacija!!!
+Operacija nije uspjesno izvrsena
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
