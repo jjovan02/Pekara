@@ -1,5 +1,6 @@
 package ui.logic;
 
+import ai.PekaraAIRequest;
 import communication.Communication;
 import java.util.ArrayList;
 import model.*;
@@ -228,4 +229,15 @@ public class UIController {
             return (ArrayList<Racun>) response.getResult();
         throw response.getException();
     }
+    
+    public String vratiAIPreporuku(PekaraAIRequest aiRequest) throws Exception {
+        Request request = new Request(Operation.VRATI_AI_PREPORUKU, aiRequest);
+        Response response = Communication.getInstance().vratiAIPreporuku(request);
+        if (response.getResponseType().equals(ResponseType.SUCCESS)) {
+            return (String) response.getResult();
+        } else {
+            throw response.getException();
+        }
+    }
+    
 }

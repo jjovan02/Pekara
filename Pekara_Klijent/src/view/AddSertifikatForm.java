@@ -130,7 +130,7 @@ public class AddSertifikatForm extends javax.swing.JDialog {
             dispose();
 
         } catch (Exception ex) {
-            JOptionPane.showMessageDialog(this, "Sistem ne može da zapamti sertifikat.", "Greška", JOptionPane.ERROR_MESSAGE);
+            JOptionPane.showMessageDialog(this, "Sistem ne može da zapamti sertifikat: " + ex.getMessage(), "Greška", JOptionPane.ERROR_MESSAGE);
         }
 
     }//GEN-LAST:event_btnSacuvajActionPerformed

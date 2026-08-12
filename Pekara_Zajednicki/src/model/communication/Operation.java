@@ -42,5 +42,7 @@ public enum Operation {
     KREIRAJ_RACUN,
     LISTA_SVI_RACUN,
     LISTA_NEKI_RACUN,
-    PROMENI_RACUN
+    PROMENI_RACUN,
+    
+    VRATI_AI_PREPORUKU
 }

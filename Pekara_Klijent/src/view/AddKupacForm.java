@@ -204,7 +204,7 @@ public class AddKupacForm extends javax.swing.JDialog {
             dispose();
 
         } catch (Exception ex) {
-            JOptionPane.showMessageDialog(this,"Sistem ne može da zapamti kupca.","Greška", JOptionPane.ERROR_MESSAGE);
+            JOptionPane.showMessageDialog(this,"Sistem ne može da zapamti kupca: " + ex.getMessage(), "Greška", JOptionPane.ERROR_MESSAGE);
         }
     }//GEN-LAST:event_btnSacuvajActionPerformed
 

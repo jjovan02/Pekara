@@ -140,7 +140,7 @@ public class SvaPecivaForm extends javax.swing.JFrame {
                     .addComponent(btnDodaj)
                     .addComponent(btnPromeni)
                     .addComponent(btnObrisi))
-                .addContainerGap(37, Short.MAX_VALUE))
+                .addContainerGap(54, Short.MAX_VALUE))
         );
 
         pack();

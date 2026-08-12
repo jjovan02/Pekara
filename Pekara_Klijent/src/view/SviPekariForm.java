@@ -186,7 +186,7 @@ public class SviPekariForm extends javax.swing.JFrame {
                     .addComponent(btnObrisi)
                     .addComponent(btnPromeni)
                     .addComponent(btnDodaj))
-                .addContainerGap(16, Short.MAX_VALUE))
+                .addContainerGap(26, Short.MAX_VALUE))
         );
 
         pack();

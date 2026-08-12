@@ -149,4 +149,10 @@ public class Communication {
         System.out.println("Zahtev za svim racunima poslat...");
         return sendAndReceive(request);
     }
+    
+   public Response vratiAIPreporuku(Request request) throws Exception {
+        System.out.println("Zahtev za AI preporukom količina peciva poslat...");
+        return sendAndReceive(request);
+    }
+    
 }

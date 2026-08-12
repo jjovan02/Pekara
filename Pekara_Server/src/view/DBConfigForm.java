@@ -48,10 +48,10 @@ public class DBConfigForm extends javax.swing.JDialog {
         txtUrl = new javax.swing.JTextField();
         txtUsername = new javax.swing.JTextField();
         jLabel2 = new javax.swing.JLabel();
-        txtPassword = new javax.swing.JTextField();
         jLabel3 = new javax.swing.JLabel();
         btnSacuvaj = new javax.swing.JButton();
         btnOtkazi = new javax.swing.JButton();
+        txtPassword = new javax.swing.JPasswordField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
 
@@ -88,21 +88,18 @@ public class DBConfigForm extends javax.swing.JDialog {
                         .addComponent(btnSacuvaj))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(14, 14, 14)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
-                                .addComponent(jLabel3)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(txtPassword, javax.swing.GroupLayout.PREFERRED_SIZE, 400, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel2, javax.swing.GroupLayout.DEFAULT_SIZE, 99, Short.MAX_VALUE)
+                            .addGroup(layout.createSequentialGroup()
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addGroup(layout.createSequentialGroup()
-                                        .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addGap(0, 0, Short.MAX_VALUE))
-                                    .addComponent(jLabel2, javax.swing.GroupLayout.DEFAULT_SIZE, 99, Short.MAX_VALUE))
-                                .addGap(18, 18, 18)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(txtUsername, javax.swing.GroupLayout.PREFERRED_SIZE, 400, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(txtUrl, javax.swing.GroupLayout.PREFERRED_SIZE, 400, javax.swing.GroupLayout.PREFERRED_SIZE))))))
+                                    .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jLabel3))
+                                .addGap(0, 0, Short.MAX_VALUE)))
+                        .addGap(18, 18, 18)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(txtUsername, javax.swing.GroupLayout.DEFAULT_SIZE, 400, Short.MAX_VALUE)
+                            .addComponent(txtUrl, javax.swing.GroupLayout.DEFAULT_SIZE, 400, Short.MAX_VALUE)
+                            .addComponent(txtPassword))))
                 .addGap(21, 21, 21))
         );
         layout.setVerticalGroup(
@@ -136,16 +133,31 @@ public class DBConfigForm extends javax.swing.JDialog {
 
     private void btnSacuvajActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSacuvajActionPerformed
         try {
+            String url = txtUrl.getText().trim();
+            String username = txtUsername.getText().trim();
+            
+            String password = new String(txtPassword.getPassword()).trim();
+
+            if (url.isEmpty()) {
+                throw new Exception("URL baze podataka ne sme biti prazan!");
+            }
+            if (username.isEmpty()) {
+                throw new Exception("Korisničko ime ne sme biti prazno!");
+            }
+
             Properties p = new Properties();
-            p.setProperty("url", txtUrl.getText().trim());
-            p.setProperty("username", txtUsername.getText().trim());
-            p.setProperty("password", txtPassword.getText().trim());
+            p.setProperty("url", url);
+            p.setProperty("username", username);
+            p.setProperty("password", password);
+            
             p.store(new java.io.FileOutputStream("config/dbconfig.properties"), null);
-            JOptionPane.showMessageDialog(this,"Sistem je zapamtio konfiguraciju baze podataka.","Info", JOptionPane.INFORMATION_MESSAGE);
+            
+            JOptionPane.showMessageDialog(this, "Sistem je zapamtio konfiguraciju baze podataka.", "Info", JOptionPane.INFORMATION_MESSAGE);
             dispose();
         } catch (Exception ex) {
-            JOptionPane.showMessageDialog(this,  "Sistem ne može da zapamti konfiguraciju.", "Greška", JOptionPane.ERROR_MESSAGE);
+            JOptionPane.showMessageDialog(this, "Sistem ne može da zapamti konfiguraciju: " + ex.getMessage(), "Greška", JOptionPane.ERROR_MESSAGE);
         }
+    
 
     }//GEN-LAST:event_btnSacuvajActionPerformed
 
@@ -157,7 +169,7 @@ public class DBConfigForm extends javax.swing.JDialog {
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
-    private javax.swing.JTextField txtPassword;
+    private javax.swing.JPasswordField txtPassword;
     private javax.swing.JTextField txtUrl;
     private javax.swing.JTextField txtUsername;
     // End of variables declaration//GEN-END:variables
@@ -177,3 +189,5 @@ public class DBConfigForm extends javax.swing.JDialog {
     }
 
 }
+
+

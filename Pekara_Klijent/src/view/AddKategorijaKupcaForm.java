@@ -143,7 +143,7 @@ public class AddKategorijaKupcaForm extends javax.swing.JDialog {
         } catch (NumberFormatException ex) {
             JOptionPane.showMessageDialog(this,"Popust mora biti ceo broj!","Greška", JOptionPane.ERROR_MESSAGE);
         } catch (Exception ex) {
-            JOptionPane.showMessageDialog(this,"Sistem ne može da zapamti kategoriju kupca.", "Greška", JOptionPane.ERROR_MESSAGE);
+            JOptionPane.showMessageDialog(this,"Sistem ne može da zapamti kategoriju kupca: " + ex.getMessage(), "Greška", JOptionPane.ERROR_MESSAGE);
         }
     }//GEN-LAST:event_btnSacuvajActionPerformed
 

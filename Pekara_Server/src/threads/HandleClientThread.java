@@ -2,12 +2,17 @@
 package threads;
 
 
+import ai.PekaraAIRequest;
+import ai.PekaraAIService;
+import ai.PekaraAIServiceImpl;
 import java.io.IOException;
 import java.net.Socket;
 import java.util.ArrayList;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import controller.Controller;
+import java.io.FileInputStream;
+import java.util.Properties;
 import model.*;
 import model.communication.*;
 
@@ -89,6 +94,8 @@ public class HandleClientThread extends Thread {
             case LISTA_SVI_RACUN: return vratiListaSviRacun(request);
             case LISTA_NEKI_RACUN: return vratiListaNekiRacun(request);
             case PROMENI_RACUN: return promeniRacun(request);
+            
+            case VRATI_AI_PREPORUKU: return vratiAIPreporuku(request);
 
             default: return null;
         }
@@ -385,5 +392,40 @@ public class HandleClientThread extends Thread {
             response.setResponseType(ResponseType.SUCCESS); response.setResult(null);
         } catch (Exception ex) { response.setResponseType(ResponseType.ERROR); response.setException(ex); }
         return response;
+    }
+
+    private Response vratiAIPreporuku(Request request) {
+        Response response = new Response();
+        try {
+            // Preuzimanje argumenata raspakovanih iz zahteva klijenta
+            PekaraAIRequest aiRequest = (PekaraAIRequest) request.getArgument();
+
+            // Bezbedno učitavanje ključa unutar serverskog okruženja
+            Properties props = new Properties();
+            try (FileInputStream fis = new FileInputStream("config/openai.properties")) {
+                props.load(fis);
+            } catch (IOException e) {
+                throw new Exception("Serverska greška: Konfiguracioni fajl 'config/openai.properties' nije pronađen.");
+            }
+
+            String apiKey = props.getProperty("apiKey");
+            if (apiKey == null || apiKey.trim().isEmpty()) {
+                throw new Exception("Serverska greška: API ključ nije pravilno konfigurisan na serveru.");
+            }
+
+            // Izvršavanje stvarnog poziva OpenAPI servisa sa servera
+            PekaraAIService service = new PekaraAIServiceImpl(apiKey);
+            String rezultat = service.getPreporuka(aiRequest);
+
+            // Pakovanje uspešnog tekstualnog rezultata za slanje klijentu
+            response.setResponseType(ResponseType.SUCCESS);
+            response.setResult(rezultat);
+
+        } catch (Exception ex) {
+            response.setResponseType(ResponseType.ERROR);
+            response.setException(new Exception("Greška na AI servisu servera: " + ex.getMessage()));
+        }
+        return response;
+        
     }
 }

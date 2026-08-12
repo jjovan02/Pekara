@@ -4,10 +4,39 @@
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
             <file>file:/C:/Users/jovan/OneDrive/Documenti/NetBeansProjects/Softveri/Pekara_Server/src/db/impl/DBBroker.java</file>
-            <file>file:/C:/Users/jovan/OneDrive/Documenti/NetBeansProjects/Softveri/Pekara_Server/src/so/pecivo/VratiListuSviPecivo.java</file>
-            <file>file:/C:/Users/jovan/OneDrive/Documenti/NetBeansProjects/Softveri/Pekara_Server/src/controller/Controller.java</file>
-            <file>file:/C:/Users/jovan/OneDrive/Documenti/NetBeansProjects/Softveri/Pekara_Server/test/so/KreirajKupacTest.java</file>
+            <file>file:/C:/Users/jovan/OneDrive/Documenti/NetBeansProjects/Softveri/Pekara_Server/src/so/kupac/ObrisiKupac.java</file>
+            <file>file:/C:/Users/jovan/OneDrive/Documenti/NetBeansProjects/Softveri/Pekara_Server/src/ai/PekaraAIServiceImpl.java</file>
+            <file>file:/C:/Users/jovan/OneDrive/Documenti/NetBeansProjects/Softveri/Pekara_Server/src/so/pekar/PromeniPekar.java</file>
+            <file>file:/C:/Users/jovan/OneDrive/Documenti/NetBeansProjects/Softveri/Pekara_Server/src/so/OpstaSO.java</file>
+            <file>file:/C:/Users/jovan/OneDrive/Documenti/NetBeansProjects/Softveri/Pekara_Server/src/so/pekar/KreirajPekar.java</file>
+            <file>file:/C:/Users/jovan/OneDrive/Documenti/NetBeansProjects/Softveri/Pekara_Server/test/so/KreirajKategorijaKupcaTest.java</file>
+            <file>file:/C:/Users/jovan/OneDrive/Documenti/NetBeansProjects/Softveri/Pekara_Server/src/so/sertifikat/UbaciSertifikat.java</file>
+            <file>file:/C:/Users/jovan/OneDrive/Documenti/NetBeansProjects/Softveri/Pekara_Server/src/so/pecivo/PromeniPecivo.java</file>
             <file>file:/C:/Users/jovan/OneDrive/Documenti/NetBeansProjects/Softveri/Pekara_Server/src/threads/HandleClientThread.java</file>
+            <file>file:/C:/Users/jovan/OneDrive/Documenti/NetBeansProjects/Softveri/Pekara_Server/src/so/pecivo/KreirajPecivo.java</file>
+            <file>file:/C:/Users/jovan/OneDrive/Documenti/NetBeansProjects/Softveri/Pekara_Server/src/so/kupac/PretraziKupac.java</file>
+            <file>file:/C:/Users/jovan/OneDrive/Documenti/NetBeansProjects/Softveri/Pekara_Server/src/controller/Controller.java</file>
+            <file>file:/C:/Users/jovan/OneDrive/Documenti/NetBeansProjects/Softveri/Pekara_Server/src/db/DBRepository.java</file>
+            <file>file:/C:/Users/jovan/OneDrive/Documenti/NetBeansProjects/Softveri/Pekara_Server/test/so/KreirajKupacTest.java</file>
+            <file>file:/C:/Users/jovan/OneDrive/Documenti/NetBeansProjects/Softveri/Pekara_Server/src/so/kupac/PromeniKupac.java</file>
+            <file>file:/C:/Users/jovan/OneDrive/Documenti/NetBeansProjects/Softveri/Pekara_Server/src/ai/PekaraAIService.java</file>
+            <file>file:/C:/Users/jovan/OneDrive/Documenti/NetBeansProjects/Softveri/Pekara_Server/src/view/DBConfigForm.java</file>
+            <file>file:/C:/Users/jovan/OneDrive/Documenti/NetBeansProjects/Softveri/Pekara_Server/src/so/kupac/KreirajKupac.java</file>
+            <file>file:/C:/Users/jovan/OneDrive/Documenti/NetBeansProjects/Softveri/Pekara_Server/baza_memory.sql</file>
+            <file>file:/C:/Users/jovan/OneDrive/Documenti/NetBeansProjects/Softveri/Pekara_Server/src/so/pecivo/VratiListuSviPecivo.java</file>
+            <file>file:/C:/Users/jovan/OneDrive/Documenti/NetBeansProjects/Softveri/Pekara_Server/config/openai.properties</file>
+            <file>file:/C:/Users/jovan/OneDrive/Documenti/NetBeansProjects/Softveri/Pekara_Server/src/so/pecivo/ObrisiPecivo.java</file>
+            <file>file:/C:/Users/jovan/OneDrive/Documenti/NetBeansProjects/Softveri/Pekara_Server/src/so/racun/KreirajRacun.java</file>
+            <file>file:/C:/Users/jovan/OneDrive/Documenti/NetBeansProjects/Softveri/Pekara_Server/src/so/sertifikat/PromeniSertifikat.java</file>
+            <file>file:/C:/Users/jovan/OneDrive/Documenti/NetBeansProjects/Softveri/Pekara_Server/src/so/kupac/VratiListuSviKupac.java</file>
+            <file>file:/C:/Users/jovan/OneDrive/Documenti/NetBeansProjects/Softveri/Pekara_Server/src/view/ServerConfigForm.java</file>
+            <file>file:/C:/Users/jovan/OneDrive/Documenti/NetBeansProjects/Softveri/Pekara_Server/src/konfiguracija/Konfiguracija.java</file>
+            <file>file:/C:/Users/jovan/OneDrive/Documenti/NetBeansProjects/Softveri/Pekara_Server/src/so/kupac/VratiListuKupac.java</file>
+            <file>file:/C:/Users/jovan/OneDrive/Documenti/NetBeansProjects/Softveri/Pekara_Server/test/so/PrijaviPekarTest.java</file>
+            <file>file:/C:/Users/jovan/OneDrive/Documenti/NetBeansProjects/Softveri/Pekara_Server/src/so/kategorijaKupca/KreirajKategorijaKupca.java</file>
+            <file>file:/C:/Users/jovan/OneDrive/Documenti/NetBeansProjects/Softveri/Pekara_Server/test/base/TestBase.java</file>
+            <file>file:/C:/Users/jovan/OneDrive/Documenti/NetBeansProjects/Softveri/Pekara_Server/src/so/kategorijaKupca/PromeniKategorijaKupca.java</file>
+            <file>file:/C:/Users/jovan/OneDrive/Documenti/NetBeansProjects/Softveri/Pekara_Server/config/dbconfig.properties</file>
         </group>
     </open-files>
 </project-private>

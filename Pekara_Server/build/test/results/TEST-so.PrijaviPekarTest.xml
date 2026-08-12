@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite errors="0" failures="0" hostname="Lenovo" name="so.PrijaviPekarTest" skipped="0" tests="6" time="0.511" timestamp="2026-05-31T19:57:27">
+<testsuite errors="0" failures="0" hostname="Lenovo" name="so.PrijaviPekarTest" skipped="0" tests="6" time="0.492" timestamp="2026-08-12T09:49:49">
   <properties>
-    <property name="javac.test.classpath" value="../Pekara_Zajednicki/dist/Pekara_Zajednicki.jar:../hsqldb.jar:../mysql-connector-j-9.1.0.jar:build/classes:C:\Program Files\NetBeans-23\netbeans\platform\modules\ext\junit-4.13.2.jar:C:\Program Files\NetBeans-23\netbeans\platform\modules\ext\hamcrest-core-1.3.jar:../hamcrest-core-1.3.jar:../hsqldb.jar" />
+    <property name="javac.test.classpath" value="../Pekara_Zajednicki/dist/Pekara_Zajednicki.jar:../hsqldb.jar:../mysql-connector-j-9.1.0.jar:annotations-13.0.jar:classmate-1.7.0.jar:error_prone_annotations-2.33.0.jar:httpclient5-5.3.1.jar:httpcore5-5.2.4.jar:httpcore5-h2-5.2.4.jar:jackson-annotations-2.17.1.jar:jackson-core-2.17.1.jar:jackson-databind-2.17.1.jar:jackson-datatype-jdk8-2.18.2.jar:jackson-datatype-jsr310-2.18.2.jar:jackson-module-kotlin-2.18.2.jar:jsonschema-generator-4.38.0.jar:jsonschema-module-jackson-4.38.0.jar:kotlin-reflect-1.8.10.jar:kotlin-stdlib-1.8.0.jar:kotlin-stdlib-common-1.8.0.jar:kotlin-stdlib-jdk7-1.8.0.jar:kotlin-stdlib-jdk8-1.8.0.jar:logging-interceptor-4.12.0.jar:okhttp-4.12.0.jar:okio-3.6.0.jar:okio-jvm-3.6.0.jar:openai-java-2.9.0.jar:openai-java-client-okhttp-2.9.0.jar:openai-java-core-2.9.0.jar:slf4j-api-1.7.36.jar:build/classes:C:\Program Files\NetBeans-23\netbeans\platform\modules\ext\junit-4.13.2.jar:C:\Program Files\NetBeans-23\netbeans\platform\modules\ext\hamcrest-core-1.3.jar:../hamcrest-core-1.3.jar:../hsqldb.jar" />
     <property name="java.specification.version" value="23" />
     <property name="libs.spring-framework500.classpath" value="C:\Program Files\NetBeans-23\netbeans\platform\modules\org-apache-commons-logging.jar;C:\Program Files\NetBeans-23\netbeans\java\modules\ext\cglib-2.2.jar;C:\Program Files\NetBeans-23\netbeans\java\modules\ext\spring-5\spring-aop-5.3.31.jar;C:\Program Files\NetBeans-23\netbeans\java\modules\ext\spring-5\spring-aspects-5.3.31.jar;C:\Program Files\NetBeans-23\netbeans\java\modules\ext\spring-5\spring-beans-5.3.31.jar;C:\Program Files\NetBeans-23\netbeans\java\modules\ext\spring-5\spring-context-5.3.31.jar;C:\Program Files\NetBeans-23\netbeans\java\modules\ext\spring-5\spring-context-indexer-5.3.31.jar;C:\Program Files\NetBeans-23\netbeans\java\modules\ext\spring-5\spring-context-support-5.3.31.jar;C:\Program Files\NetBeans-23\netbeans\java\modules\ext\spring-5\spring-core-5.3.31.jar;C:\Program Files\NetBeans-23\netbeans\java\modules\ext\spring-5\spring-expression-5.3.31.jar;C:\Program Files\NetBeans-23\netbeans\java\modules\ext\spring-5\spring-instrument-5.3.31.jar;C:\Program Files\NetBeans-23\netbeans\java\modules\ext\spring-5\spring-jcl-5.3.31.jar;C:\Program Files\NetBeans-23\netbeans\java\modules\ext\spring-5\spring-jdbc-5.3.31.jar;C:\Program Files\NetBeans-23\netbeans\java\modules\ext\spring-5\spring-jms-5.3.31.jar;C:\Program Files\NetBeans-23\netbeans\java\modules\ext\spring-5\spring-messaging-5.3.31.jar;C:\Program Files\NetBeans-23\netbeans\java\modules\ext\spring-5\spring-orm-5.3.31.jar;C:\Program Files\NetBeans-23\netbeans\java\modules\ext\spring-5\spring-oxm-5.3.31.jar;C:\Program Files\NetBeans-23\netbeans\java\modules\ext\spring-5\spring-test-5.3.31.jar;C:\Program Files\NetBeans-23\netbeans\java\modules\ext\spring-5\spring-tx-5.3.31.jar;C:\Program Files\NetBeans-23\netbeans\java\modules\ext\spring-5\spring-web-5.3.31.jar;C:\Program Files\NetBeans-23\netbeans\java\modules\ext\spring-5\spring-webflux-5.3.31.jar;C:\Program Files\NetBeans-23\netbeans\java\modules\ext\spring-5\spring-webmvc-5.3.31.jar;C:\Program Files\NetBeans-23\netbeans\java\modules\ext\spring-5\spring-websocket-5.3.31.jar" />
     <property name="jar.index.metainf" value="false" />
@@ -10,12 +10,13 @@
     <property name="do.jlink" value="false" />
     <property name="libs.javaee-web-api-8.0.src" value="" />
     <property name="java.vendor.url" value="https://java.oracle.com/" />
+    <property name="file.reference.openai-java-2.9.0.jar" value="openai-java-2.9.0.jar" />
     <property name="debug.modulepath" value="" />
     <property name="libs.jsp-compilation.src" value="" />
     <property name="libs.eclipselink.javadoc" value="C:\Program Files\NetBeans-23\netbeans\java\modules\ext\docs\jakarta.persistence-2.2.3-doc.zip" />
     <property name="libs.JWSAntTasks.javadoc" value="" />
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-23\bin" />
-    <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner so.PrijaviPekarTest skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false showoutput=true outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=true formatter=org.apache.tools.ant.taskdefs.optional.junit.BriefJUnitResultFormatter formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,C:\Users\jovan\OneDrive\Documenti\NetBeansProjects\Softveri\Pekara_Server\build\test\results\TEST-so.PrijaviPekarTest.xml crashfile=C:\Users\jovan\OneDrive\Documenti\NetBeansProjects\Softveri\Pekara_Server\build\junitvmwatcher10299817635198823295.properties propsfile=C:\Users\jovan\OneDrive\Documenti\NetBeansProjects\Softveri\Pekara_Server\build\junit4758654606727914686.properties" />
+    <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner so.PrijaviPekarTest skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false showoutput=true outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=true formatter=org.apache.tools.ant.taskdefs.optional.junit.BriefJUnitResultFormatter formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,C:\Users\jovan\OneDrive\Documenti\NetBeansProjects\Softveri\Pekara_Server\build\test\results\TEST-so.PrijaviPekarTest.xml crashfile=C:\Users\jovan\OneDrive\Documenti\NetBeansProjects\Softveri\Pekara_Server\build\junitvmwatcher1914486719272479432.properties propsfile=C:\Users\jovan\OneDrive\Documenti\NetBeansProjects\Softveri\Pekara_Server\build\junit4454326619511373798.properties" />
     <property name="jdk.debug" value="release" />
     <property name="javadoc.use" value="true" />
     <property name="javadoc.notree" value="false" />
@@ -24,6 +25,7 @@
     <property name="ant.file.Pekara_Server" value="C:\Users\jovan\OneDrive\Documenti\NetBeansProjects\Softveri\Pekara_Server\build.xml" />
     <property name="java.vm.specification.vendor" value="Oracle Corporation" />
     <property name="java.specification.name" value="Java Platform API Specification" />
+    <property name="file.reference.jsonschema-module-jackson-4.38.0.jar" value="jsonschema-module-jackson-4.38.0.jar" />
     <property name="libs.jsf20.classpath" value="C:\Program Files\NetBeans-23\netbeans\enterprise\modules\ext\jsf-2_2\javax.faces.jar" />
     <property name="netbeans.extbrowser.manual_chrome_plugin_install" value="yes" />
     <property name="libs.jakartaee-api-10.0.maven-pom" value="" />
@@ -53,15 +55,16 @@
     <property name="java.library.path" value="C:\Program Files\Java\jdk-23\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Microsoft SDKs\Azure\CLI2\wbin;C:\Python314\Scripts\;C:\Python314\;C:\Program Files\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\dotnet\;C:\Program Files\Git\cmd;C:\Program Files\NVIDIA Corporation\NVIDIA app\NvDLISR;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\Docker\Docker\resources\bin;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\jovan\AppData\Local\Microsoft\WindowsApps;;C:\Users\jovan\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\jovan\AppData\Local\PowerToys\;C:\Users\jovan\AppData\Local\Programs\Antigravity\bin;." />
     <property name="libs.hamcrest.src" value="" />
     <property name="java.vendor" value="Oracle Corporation" />
-    <property name="libs.groovy-all.src" value="" />
     <property name="libs.testng.javadoc" value="C:\Program Files\NetBeans-23\netbeans\platform\docs\testng-6.13.1-javadoc.jar" />
+    <property name="libs.groovy-all.src" value="" />
     <property name="meta.inf.dir" value="src/META-INF" />
     <property name="run.upgrademodulepath" value="" />
+    <property name="file.reference.logging-interceptor-4.12.0.jar" value="logging-interceptor-4.12.0.jar" />
     <property name="compile.on.save" value="true" />
     <property name="jlink.additionalparam" value="" />
     <property name="libs.testng.maven-pom" value="" />
     <property name="org.openide.version" value="deprecated" />
-    <property name="run.classpath" value="../Pekara_Zajednicki/dist/Pekara_Zajednicki.jar:../hsqldb.jar:../mysql-connector-j-9.1.0.jar:build/classes" />
+    <property name="run.classpath" value="../Pekara_Zajednicki/dist/Pekara_Zajednicki.jar:../hsqldb.jar:../mysql-connector-j-9.1.0.jar:annotations-13.0.jar:classmate-1.7.0.jar:error_prone_annotations-2.33.0.jar:httpclient5-5.3.1.jar:httpcore5-5.2.4.jar:httpcore5-h2-5.2.4.jar:jackson-annotations-2.17.1.jar:jackson-core-2.17.1.jar:jackson-databind-2.17.1.jar:jackson-datatype-jdk8-2.18.2.jar:jackson-datatype-jsr310-2.18.2.jar:jackson-module-kotlin-2.18.2.jar:jsonschema-generator-4.38.0.jar:jsonschema-module-jackson-4.38.0.jar:kotlin-reflect-1.8.10.jar:kotlin-stdlib-1.8.0.jar:kotlin-stdlib-common-1.8.0.jar:kotlin-stdlib-jdk7-1.8.0.jar:kotlin-stdlib-jdk8-1.8.0.jar:logging-interceptor-4.12.0.jar:okhttp-4.12.0.jar:okio-3.6.0.jar:okio-jvm-3.6.0.jar:openai-java-2.9.0.jar:openai-java-client-okhttp-2.9.0.jar:openai-java-core-2.9.0.jar:slf4j-api-1.7.36.jar:build/classes" />
     <property name="libs.jaxb.src" value="" />
     <property name="ant.file.Pekara_Server-impl" value="C:\Users\jovan\OneDrive\Documenti\NetBeansProjects\Softveri\Pekara_Server\nbproject\build-impl.xml" />
     <property name="sun.awt.enableExtraMouseButtons" value="true" />
@@ -117,6 +120,7 @@
     <property name="libs.groovy-all.javadoc" value="" />
     <property name="libs.jakartaee-api-8.0.classpath" value="C:\Program Files\NetBeans-23\netbeans\enterprise\modules\ext\jakarta.jakartaee-api-8.0.0.jar" />
     <property name="libs.javaee-web-api-7.0.javadoc" value="C:\Program Files\NetBeans-23\netbeans\enterprise\docs\javaee-doc-api.jar" />
+    <property name="file.reference.httpcore5-h2-5.2.4.jar" value="httpcore5-h2-5.2.4.jar" />
     <property name="libs.javaee-endorsed-api-6.0.src" value="" />
     <property name="libs.javaee-endorsed-api-7.0.classpath" value="C:\Program Files\NetBeans-23\netbeans\enterprise\modules\ext\javaee7-endorsed\javax.annotation-api.jar;C:\Program Files\NetBeans-23\netbeans\enterprise\modules\ext\javaee7-endorsed\javax.xml.soap-api.jar;C:\Program Files\NetBeans-23\netbeans\enterprise\modules\ext\javaee7-endorsed\jaxb-api-osgi.jar;C:\Program Files\NetBeans-23\netbeans\enterprise\modules\ext\javaee7-endorsed\jaxws-api.jar;C:\Program Files\NetBeans-23\netbeans\enterprise\modules\ext\javaee7-endorsed\jsr181-api.jar" />
     <property name="libs.primefaces.maven-pom" value="" />
@@ -134,9 +138,11 @@
     <property name="testng.mode" value="testng" />
     <property name="annotation.processing.enabled.in.editor" value="false" />
     <property name="java.vm.compressedOopsMode" value="Zero based" />
+    <property name="file.reference.jackson-datatype-jsr310-2.18.2.jar" value="jackson-datatype-jsr310-2.18.2.jar" />
     <property name="netbeans.productversion" value="Apache NetBeans IDE 23" />
     <property name="mkdist.disabled" value="false" />
     <property name="libs.javaee-web-api-6.0.javadoc" value="C:\Program Files\NetBeans-23\netbeans\enterprise\docs\javaee-doc-api.jar" />
+    <property name="file.reference.kotlin-stdlib-jdk7-1.8.0.jar" value="kotlin-stdlib-jdk7-1.8.0.jar" />
     <property name="libs.groovy-all.classpath" value="C:\Program Files\NetBeans-23\netbeans\groovy\modules\ext\groovy-3.0.8.jar;C:\Program Files\NetBeans-23\netbeans\groovy\modules\ext\groovy-ant-3.0.8.jar" />
     <property name="libs.javaee-api-7.0.maven-pom" value="" />
     <property name="libs.absolutelayout.javadoc" value="" />
@@ -155,18 +161,20 @@
     <property name="sun.os.patch.level" value="" />
     <property name="libs.jakartaee-api-11.0.javadoc" value="C:\Program Files\NetBeans-23\netbeans\enterprise\docs\jakartaee11-doc-api.jar" />
     <property name="javadoc.html5" value="false" />
-    <property name="javac.test.processorpath" value="../Pekara_Zajednicki/dist/Pekara_Zajednicki.jar:../hsqldb.jar:../mysql-connector-j-9.1.0.jar:build/classes:C:\Program Files\NetBeans-23\netbeans\platform\modules\ext\junit-4.13.2.jar:C:\Program Files\NetBeans-23\netbeans\platform\modules\ext\hamcrest-core-1.3.jar:../hamcrest-core-1.3.jar:../hsqldb.jar" />
+    <property name="javac.test.processorpath" value="../Pekara_Zajednicki/dist/Pekara_Zajednicki.jar:../hsqldb.jar:../mysql-connector-j-9.1.0.jar:annotations-13.0.jar:classmate-1.7.0.jar:error_prone_annotations-2.33.0.jar:httpclient5-5.3.1.jar:httpcore5-5.2.4.jar:httpcore5-h2-5.2.4.jar:jackson-annotations-2.17.1.jar:jackson-core-2.17.1.jar:jackson-databind-2.17.1.jar:jackson-datatype-jdk8-2.18.2.jar:jackson-datatype-jsr310-2.18.2.jar:jackson-module-kotlin-2.18.2.jar:jsonschema-generator-4.38.0.jar:jsonschema-module-jackson-4.38.0.jar:kotlin-reflect-1.8.10.jar:kotlin-stdlib-1.8.0.jar:kotlin-stdlib-common-1.8.0.jar:kotlin-stdlib-jdk7-1.8.0.jar:kotlin-stdlib-jdk8-1.8.0.jar:logging-interceptor-4.12.0.jar:okhttp-4.12.0.jar:okio-3.6.0.jar:okio-jvm-3.6.0.jar:openai-java-2.9.0.jar:openai-java-client-okhttp-2.9.0.jar:openai-java-core-2.9.0.jar:slf4j-api-1.7.36.jar:build/classes:C:\Program Files\NetBeans-23\netbeans\platform\modules\ext\junit-4.13.2.jar:C:\Program Files\NetBeans-23\netbeans\platform\modules\ext\hamcrest-core-1.3.jar:../hamcrest-core-1.3.jar:../hsqldb.jar" />
     <property name="libs.javaee-web-api-7.0.maven-pom" value="" />
     <property name="libs.javaee-web-api-8.0.maven-pom" value="" />
+    <property name="file.reference.jackson-module-kotlin-2.18.2.jar" value="jackson-module-kotlin-2.18.2.jar" />
     <property name="netbeans.dirs" value="C:\Program Files\NetBeans-23\netbeans\nb;C:\Program Files\NetBeans-23\netbeans\ergonomics;C:\Program Files\NetBeans-23\netbeans\ide;C:\Program Files\NetBeans-23\netbeans\extide;C:\Program Files\NetBeans-23\netbeans\java;C:\Program Files\NetBeans-23\netbeans\apisupport;C:\Program Files\NetBeans-23\netbeans\webcommon;C:\Program Files\NetBeans-23\netbeans\websvccommon;C:\Program Files\NetBeans-23\netbeans\enterprise;C:\Program Files\NetBeans-23\netbeans\mobility;C:\Program Files\NetBeans-23\netbeans\profiler;C:\Program Files\NetBeans-23\netbeans\python;C:\Program Files\NetBeans-23\netbeans\php;C:\Program Files\NetBeans-23\netbeans\identity;C:\Program Files\NetBeans-23\netbeans\harness;C:\Program Files\NetBeans-23\netbeans\cnd;C:\Program Files\NetBeans-23\netbeans\cndext;C:\Program Files\NetBeans-23\netbeans\cpplite;C:\Program Files\NetBeans-23\netbeans\dlight;C:\Program Files\NetBeans-23\netbeans\groovy;C:\Program Files\NetBeans-23\netbeans\extra;C:\Program Files\NetBeans-23\netbeans\javacard;C:\Program Files\NetBeans-23\netbeans\javafx;C:\Program Files\NetBeans-23\netbeans\rust" />
     <property name="libs.hamcrest.maven-pom" value="" />
-    <property name="javac.processorpath" value="../Pekara_Zajednicki/dist/Pekara_Zajednicki.jar:../hsqldb.jar:../mysql-connector-j-9.1.0.jar" />
+    <property name="javac.processorpath" value="../Pekara_Zajednicki/dist/Pekara_Zajednicki.jar:../hsqldb.jar:../mysql-connector-j-9.1.0.jar:annotations-13.0.jar:classmate-1.7.0.jar:error_prone_annotations-2.33.0.jar:httpclient5-5.3.1.jar:httpcore5-5.2.4.jar:httpcore5-h2-5.2.4.jar:jackson-annotations-2.17.1.jar:jackson-core-2.17.1.jar:jackson-databind-2.17.1.jar:jackson-datatype-jdk8-2.18.2.jar:jackson-datatype-jsr310-2.18.2.jar:jackson-module-kotlin-2.18.2.jar:jsonschema-generator-4.38.0.jar:jsonschema-module-jackson-4.38.0.jar:kotlin-reflect-1.8.10.jar:kotlin-stdlib-1.8.0.jar:kotlin-stdlib-common-1.8.0.jar:kotlin-stdlib-jdk7-1.8.0.jar:kotlin-stdlib-jdk8-1.8.0.jar:logging-interceptor-4.12.0.jar:okhttp-4.12.0.jar:okio-3.6.0.jar:okio-jvm-3.6.0.jar:openai-java-2.9.0.jar:openai-java-client-okhttp-2.9.0.jar:openai-java-core-2.9.0.jar:slf4j-api-1.7.36.jar" />
     <property name="libs.javaee-api-6.0.javadoc" value="C:\Program Files\NetBeans-23\netbeans\enterprise\docs\javaee-doc-api.jar" />
     <property name="libs.JWSAntTasks.maven-pom" value="" />
     <property name="run.modulepath" value="" />
     <property name="javac.upgrademodulepath" value="" />
     <property name="do.archive+manifest.available" value="true" />
     <property name="apple.laf.useScreenMenuBar" value="true" />
+    <property name="file.reference.slf4j-api-1.7.36.jar" value="slf4j-api-1.7.36.jar" />
     <property name="user.country" value="US" />
     <property name="sun.java.launcher" value="SUN_STANDARD" />
     <property name="libs.jakartaee-api-9.0.maven-pom" value="" />
@@ -194,6 +202,7 @@
     <property name="run.jvmargs.ide" value="" />
     <property name="ant.core.lib" value="C:\Program Files\NetBeans-23\netbeans\extide\ant\lib\ant.jar" />
     <property name="libs.jsp-compilation.maven-pom" value="" />
+    <property name="file.reference.kotlin-stdlib-jdk8-1.8.0.jar" value="kotlin-stdlib-jdk8-1.8.0.jar" />
     <property name="javac.profile.cmd.line.arg" value="" />
     <property name="libs.jakartaee-web-api-11.0.src" value="" />
     <property name="libs.jakartaee-api-9.0.classpath" value="C:\Program Files\NetBeans-23\netbeans\enterprise\modules\ext\jakarta.jakartaee-api-9.0.0.jar" />
@@ -209,6 +218,8 @@
     <property name="libs.javaee-api-6.0.classpath" value="C:\Program Files\NetBeans-23\netbeans\enterprise\modules\ext\javaee-api-6.0.jar" />
     <property name="libs.javaee-api-7.0.classpath" value="C:\Program Files\NetBeans-23\netbeans\enterprise\modules\ext\javaee-api-7.0.jar" />
     <property name="sun.cpu.isalist" value="amd64" />
+    <property name="file.reference.openai-java-core-2.9.0.jar" value="openai-java-core-2.9.0.jar" />
+    <property name="file.reference.jsonschema-generator-4.38.0.jar" value="jsonschema-generator-4.38.0.jar" />
     <property name="libs.restapi.maven-pom" value="" />
     <property name="do.depend" value="false" />
     <property name="javadoc.preview" value="true" />
@@ -222,6 +233,7 @@
     <property name="libs.jaxb.classpath" value="C:\Program Files\NetBeans-23\netbeans\ide\modules\ext\jaxb\jaxb-impl.jar;C:\Program Files\NetBeans-23\netbeans\ide\modules\ext\jaxb\jaxb-xjc.jar;C:\Program Files\NetBeans-23\netbeans\ide\modules\ext\jaxb\activation.jar;C:\Program Files\NetBeans-23\netbeans\ide\modules\ext\jaxb\api\jaxb-api.jar" />
     <property name="libs.javaee-api-8.0.classpath" value="C:\Program Files\NetBeans-23\netbeans\enterprise\modules\ext\javaee-api-8.0.jar" />
     <property name="libs.CopyLibs.src" value="" />
+    <property name="file.reference.classmate-1.7.0.jar" value="classmate-1.7.0.jar" />
     <property name="javac.source" value="23" />
     <property name="java.specification.vendor" value="Oracle Corporation" />
     <property name="java.version.date" value="2024-10-15" />
@@ -230,7 +242,9 @@
     <property name="jna.boot.library.name" value="jnidispatch-nb" />
     <property name="javac.test.compilerargs" value="" />
     <property name="libs.PostgreSQLDriver.classpath" value="C:\Program Files\NetBeans-23\netbeans\ide\modules\ext\postgresql-42.5.4.jar" />
+    <property name="file.reference.annotations-13.0.jar" value="annotations-13.0.jar" />
     <property name="libs.graaljs.javadoc" value="" />
+    <property name="file.reference.httpclient5-5.3.1.jar" value="httpclient5-5.3.1.jar" />
     <property name="libs.JAXB-ENDORSED.src" value="" />
     <property name="manifest.encoding" value="UTF-8" />
     <property name="user.script" value="" />
@@ -253,6 +267,8 @@
     <property name="platform.active" value="default_platform" />
     <property name="manifest.file" value="manifest.mf" />
     <property name="stderr.encoding" value="Cp1252" />
+    <property name="file.reference.error_prone_annotations-2.33.0.jar" value="error_prone_annotations-2.33.0.jar" />
+    <property name="file.reference.kotlin-stdlib-1.8.0.jar" value="kotlin-stdlib-1.8.0.jar" />
     <property name="sun.io.unicode.encoding" value="UnicodeLittle" />
     <property name="default.javac.source" value="23" />
     <property name="libs.javaee-web-api-8.0.javadoc" value="C:\Program Files\NetBeans-23\netbeans\enterprise\docs\javaee-doc-api.jar" />
@@ -281,6 +297,7 @@
     <property name="libs.jsf20.maven-pom" value="" />
     <property name="libs.restlib.classpath" value="C:\Program Files\NetBeans-23\netbeans\enterprise\modules\ext\jersey2\jakarta.annotation-api-2.1.1.jar;C:\Program Files\NetBeans-23\netbeans\enterprise\modules\ext\jersey2\jakarta.persistence-api-2.2.3.jar;C:\Program Files\NetBeans-23\netbeans\enterprise\modules\ext\jersey2\jakarta.servlet-api-4.0.4.jar;C:\Program Files\NetBeans-23\netbeans\enterprise\modules\ext\jersey2\jakarta.validation-api-2.0.2.jar;C:\Program Files\NetBeans-23\netbeans\enterprise\modules\ext\jersey2\jakarta.xml.bind-api-2.3.3.jar;C:\Program Files\NetBeans-23\netbeans\enterprise\modules\ext\jersey2\jersey-client-2.35.jar;C:\Program Files\NetBeans-23\netbeans\enterprise\modules\ext\jersey2\jersey-common-2.35.jar;C:\Program Files\NetBeans-23\netbeans\enterprise\modules\ext\jersey2\jersey-server-2.35.jar;C:\Program Files\NetBeans-23\netbeans\enterprise\modules\ext\jersey2\jersey-entity-filtering-2.35.jar;C:\Program Files\NetBeans-23\netbeans\enterprise\modules\ext\jersey2\jersey-hk2-2.35.jar;C:\Program Files\NetBeans-23\netbeans\enterprise\modules\ext\jersey2\jersey-media-moxy-2.35.jar;C:\Program Files\NetBeans-23\netbeans\enterprise\modules\ext\jersey2\jersey-container-servlet-2.35.jar;C:\Program Files\NetBeans-23\netbeans\enterprise\modules\ext\jersey2\jersey-container-servlet-core-2.35.jar;C:\Program Files\NetBeans-23\netbeans\enterprise\modules\ext\jersey2\hk2-api-2.6.1.jar;C:\Program Files\NetBeans-23\netbeans\enterprise\modules\ext\jersey2\hk2-locator-2.6.1.jar;C:\Program Files\NetBeans-23\netbeans\enterprise\modules\ext\jersey2\hk2-utils-2.6.1.jar;C:\Program Files\NetBeans-23\netbeans\enterprise\modules\ext\jersey2\jakarta.inject-2.6.1.jar;C:\Program Files\NetBeans-23\netbeans\enterprise\modules\ext\jersey2\aopalliance-repackaged-2.6.1.jar;C:\Program Files\NetBeans-23\netbeans\enterprise\modules\ext\jersey2\osgi.core-8.0.0.jar;C:\Program Files\NetBeans-23\netbeans\enterprise\modules\ext\jersey2\osgi-resource-locator-1.0.3.jar;C:\Program Files\NetBeans-23\netbeans\java\modules\ext\eclipselink\org.eclipse.persistence.core-2.7.12.jar;C:\Program Files\NetBeans-23\netbeans\java\modules\ext\eclipselink\org.eclipse.persistence.asm-9.4.0.jar;C:\Program Files\NetBeans-23\netbeans\java\modules\ext\eclipselink\org.eclipse.persistence.antlr-2.7.12.jar;C:\Program Files\NetBeans-23\netbeans\java\modules\ext\eclipselink\org.eclipse.persistence.jpa-2.7.12.jar;C:\Program Files\NetBeans-23\netbeans\java\modules\ext\eclipselink\org.eclipse.persistence.jpa.jpql-2.7.12.jar;C:\Program Files\NetBeans-23\netbeans\java\modules\ext\eclipselink\org.eclipse.persistence.moxy-2.7.12.jar" />
     <property name="libs.jakartaee-web-api-8.0.javadoc" value="C:\Program Files\NetBeans-23\netbeans\enterprise\docs\jakartaee8-doc-api.jar" />
+    <property name="file.reference.jackson-datatype-jdk8-2.18.2.jar" value="jackson-datatype-jdk8-2.18.2.jar" />
     <property name="libs.graaljs.src" value="" />
     <property name="run.jvmargs" value="" />
     <property name="libs.primefaces.src" value="" />
@@ -302,21 +319,24 @@
     <property name="java.vm.info" value="mixed mode, sharing" />
     <property name="libs.primefaces.classpath" value="C:\Program Files\NetBeans-23\netbeans\enterprise\modules\ext\primefaces\primefaces-5.0.jar" />
     <property name="libs.jaxws21.maven-pom" value="" />
-    <property name="run.test.classpath" value="../Pekara_Zajednicki/dist/Pekara_Zajednicki.jar:../hsqldb.jar:../mysql-connector-j-9.1.0.jar:build/classes:C:\Program Files\NetBeans-23\netbeans\platform\modules\ext\junit-4.13.2.jar:C:\Program Files\NetBeans-23\netbeans\platform\modules\ext\hamcrest-core-1.3.jar:../hamcrest-core-1.3.jar:../hsqldb.jar:build/test/classes:../hamcrest-core-1.3.jar:../hsqldb.jar" />
+    <property name="run.test.classpath" value="../Pekara_Zajednicki/dist/Pekara_Zajednicki.jar:../hsqldb.jar:../mysql-connector-j-9.1.0.jar:annotations-13.0.jar:classmate-1.7.0.jar:error_prone_annotations-2.33.0.jar:httpclient5-5.3.1.jar:httpcore5-5.2.4.jar:httpcore5-h2-5.2.4.jar:jackson-annotations-2.17.1.jar:jackson-core-2.17.1.jar:jackson-databind-2.17.1.jar:jackson-datatype-jdk8-2.18.2.jar:jackson-datatype-jsr310-2.18.2.jar:jackson-module-kotlin-2.18.2.jar:jsonschema-generator-4.38.0.jar:jsonschema-module-jackson-4.38.0.jar:kotlin-reflect-1.8.10.jar:kotlin-stdlib-1.8.0.jar:kotlin-stdlib-common-1.8.0.jar:kotlin-stdlib-jdk7-1.8.0.jar:kotlin-stdlib-jdk8-1.8.0.jar:logging-interceptor-4.12.0.jar:okhttp-4.12.0.jar:okio-3.6.0.jar:okio-jvm-3.6.0.jar:openai-java-2.9.0.jar:openai-java-client-okhttp-2.9.0.jar:openai-java-core-2.9.0.jar:slf4j-api-1.7.36.jar:build/classes:C:\Program Files\NetBeans-23\netbeans\platform\modules\ext\junit-4.13.2.jar:C:\Program Files\NetBeans-23\netbeans\platform\modules\ext\hamcrest-core-1.3.jar:../hamcrest-core-1.3.jar:../hsqldb.jar:build/test/classes:../hamcrest-core-1.3.jar:../hsqldb.jar" />
     <property name="dist.jlink.output" value="dist/jlink/Pekara_Server" />
     <property name="java.class.version" value="67.0" />
     <property name="javadoc.encoding.used" value="UTF-8" />
     <property name="src.dir" value="src" />
-    <property name="debug.classpath" value="../Pekara_Zajednicki/dist/Pekara_Zajednicki.jar:../hsqldb.jar:../mysql-connector-j-9.1.0.jar:build/classes" />
+    <property name="debug.classpath" value="../Pekara_Zajednicki/dist/Pekara_Zajednicki.jar:../hsqldb.jar:../mysql-connector-j-9.1.0.jar:annotations-13.0.jar:classmate-1.7.0.jar:error_prone_annotations-2.33.0.jar:httpclient5-5.3.1.jar:httpcore5-5.2.4.jar:httpcore5-h2-5.2.4.jar:jackson-annotations-2.17.1.jar:jackson-core-2.17.1.jar:jackson-databind-2.17.1.jar:jackson-datatype-jdk8-2.18.2.jar:jackson-datatype-jsr310-2.18.2.jar:jackson-module-kotlin-2.18.2.jar:jsonschema-generator-4.38.0.jar:jsonschema-module-jackson-4.38.0.jar:kotlin-reflect-1.8.10.jar:kotlin-stdlib-1.8.0.jar:kotlin-stdlib-common-1.8.0.jar:kotlin-stdlib-jdk7-1.8.0.jar:kotlin-stdlib-jdk8-1.8.0.jar:logging-interceptor-4.12.0.jar:okhttp-4.12.0.jar:okio-3.6.0.jar:okio-jvm-3.6.0.jar:openai-java-2.9.0.jar:openai-java-client-okhttp-2.9.0.jar:openai-java-core-2.9.0.jar:slf4j-api-1.7.36.jar:build/classes" />
     <property name="ant.project.default-target" value="default" />
     <property name="excludes" value="" />
     <property name="libs.javaee-api-7.0.src" value="" />
+    <property name="file.reference.jackson-annotations-2.17.1.jar" value="jackson-annotations-2.17.1.jar" />
     <property name="sun.jnu.encoding" value="Cp1252" />
     <property name="run.test.jvmargs" value="" />
     <property name="libs.junit_4.javadoc" value="C:\Program Files\NetBeans-23\netbeans\platform\docs\junit-4.13.2-javadoc.jar" />
     <property name="sun.java2d.dpiaware" value="true" />
     <property name="main.class.available" value="true" />
     <property name="libs.jsf20.javadoc" value="C:\Program Files\NetBeans-23\netbeans\enterprise\docs\javaee-doc-api.jar" />
+    <property name="file.reference.kotlin-stdlib-common-1.8.0.jar" value="kotlin-stdlib-common-1.8.0.jar" />
+    <property name="file.reference.okio-jvm-3.6.0.jar" value="okio-jvm-3.6.0.jar" />
     <property name="netbeans.importclass" value="org.netbeans.upgrade.AutoUpgrade" />
     <property name="netbeans.autoupdate.version" value="1.23" />
     <property name="empty.dir" value="C:\Users\jovan\OneDrive\Documenti\NetBeansProjects\Softveri\Pekara_Server\build\empty" />
@@ -329,6 +349,7 @@
     <property name="org.apache.commons.logging.LogFactory" value="org.apache.commons.logging.impl.LogFactoryImpl" />
     <property name="javac.debug" value="true" />
     <property name="libs.restlib.maven-pom" value="" />
+    <property name="file.reference.jackson-core-2.17.1.jar" value="jackson-core-2.17.1.jar" />
     <property name="libs.testng.classpath" value="C:\Program Files\NetBeans-23\netbeans\platform\modules\ext\testng-6.14.3.jar;C:\Program Files\NetBeans-23\netbeans\platform\modules\ext\jcommander-1.78.jar" />
     <property name="libs.jsp-compiler.src" value="" />
     <property name="user.name" value="stari" />
@@ -339,15 +360,17 @@
     <property name="libs.javaee-api-8.0.maven-pom" value="" />
     <property name="libs.jaxws21.src" value="" />
     <property name="libs.jakartaee-web-api-9.0.javadoc" value="C:\Program Files\NetBeans-23\netbeans\enterprise\docs\jakartaee9-doc-api.jar" />
+    <property name="file.reference.httpcore5-5.2.4.jar" value="httpcore5-5.2.4.jar" />
     <property name="apple.awt.application.appearance" value="system" />
     <property name="jna.loaded" value="true" />
+    <property name="file.reference.okio-3.6.0.jar" value="okio-3.6.0.jar" />
     <property name="libs.junit_5.maven-pom" value="" />
     <property name="libs.jpa20-persistence.javadoc" value="C:\Program Files\NetBeans-23\netbeans\java\modules\ext\docs\jakarta.persistence-2.2.3-doc.zip" />
     <property name="ant.junit.enabletestlistenerevents" value="true" />
     <property name="libs.JWSAntTasks.src" value="" />
     <property name="file.reference.mysql-connector-j-9.1.0.jar" value="../mysql-connector-j-9.1.0.jar" />
     <property name="ant.home" value="C:\Program Files\NetBeans-23\netbeans\extide\ant" />
-    <property name="debug.test.classpath" value="../Pekara_Zajednicki/dist/Pekara_Zajednicki.jar:../hsqldb.jar:../mysql-connector-j-9.1.0.jar:build/classes:C:\Program Files\NetBeans-23\netbeans\platform\modules\ext\junit-4.13.2.jar:C:\Program Files\NetBeans-23\netbeans\platform\modules\ext\hamcrest-core-1.3.jar:../hamcrest-core-1.3.jar:../hsqldb.jar:build/test/classes:../hamcrest-core-1.3.jar:../hsqldb.jar" />
+    <property name="debug.test.classpath" value="../Pekara_Zajednicki/dist/Pekara_Zajednicki.jar:../hsqldb.jar:../mysql-connector-j-9.1.0.jar:annotations-13.0.jar:classmate-1.7.0.jar:error_prone_annotations-2.33.0.jar:httpclient5-5.3.1.jar:httpcore5-5.2.4.jar:httpcore5-h2-5.2.4.jar:jackson-annotations-2.17.1.jar:jackson-core-2.17.1.jar:jackson-databind-2.17.1.jar:jackson-datatype-jdk8-2.18.2.jar:jackson-datatype-jsr310-2.18.2.jar:jackson-module-kotlin-2.18.2.jar:jsonschema-generator-4.38.0.jar:jsonschema-module-jackson-4.38.0.jar:kotlin-reflect-1.8.10.jar:kotlin-stdlib-1.8.0.jar:kotlin-stdlib-common-1.8.0.jar:kotlin-stdlib-jdk7-1.8.0.jar:kotlin-stdlib-jdk8-1.8.0.jar:logging-interceptor-4.12.0.jar:okhttp-4.12.0.jar:okio-3.6.0.jar:okio-jvm-3.6.0.jar:openai-java-2.9.0.jar:openai-java-client-okhttp-2.9.0.jar:openai-java-core-2.9.0.jar:slf4j-api-1.7.36.jar:build/classes:C:\Program Files\NetBeans-23\netbeans\platform\modules\ext\junit-4.13.2.jar:C:\Program Files\NetBeans-23\netbeans\platform\modules\ext\hamcrest-core-1.3.jar:../hamcrest-core-1.3.jar:../hsqldb.jar:build/test/classes:../hamcrest-core-1.3.jar:../hsqldb.jar" />
     <property name="have.tests" value="true" />
     <property name="javac.external.vm" value="true" />
     <property name="testng.debug.mode" value="" />
@@ -361,7 +384,8 @@
     <property name="libs.javaee-api-6.0.src" value="" />
     <property name="netbeans.autoupdate.country" value="US" />
     <property name="nb.wait.for.caches" value="true" />
-    <property name="java.class.path" value="C:\Users\jovan\OneDrive\Documenti\NetBeansProjects\Softveri\Pekara_Zajednicki\dist\Pekara_Zajednicki.jar;C:\Users\jovan\OneDrive\Documenti\NetBeansProjects\Softveri\hsqldb.jar;C:\Users\jovan\OneDrive\Documenti\NetBeansProjects\Softveri\mysql-connector-j-9.1.0.jar;C:\Users\jovan\OneDrive\Documenti\NetBeansProjects\Softveri\Pekara_Server\build\classes;C:\Program Files\NetBeans-23\netbeans\platform\modules\ext\junit-4.13.2.jar;C:\Program Files\NetBeans-23\netbeans\platform\modules\ext\hamcrest-core-1.3.jar;C:\Users\jovan\OneDrive\Documenti\NetBeansProjects\Softveri\hamcrest-core-1.3.jar;C:\Users\jovan\OneDrive\Documenti\NetBeansProjects\Softveri\Pekara_Server\build\test\classes;C:\Program Files\NetBeans-23\netbeans\extide\ant\lib\ant-launcher.jar;C:\Program Files\NetBeans-23\netbeans\extide\ant\lib\ant.jar;C:\Program Files\NetBeans-23\netbeans\extide\ant\lib\ant-junit.jar;C:\Program Files\NetBeans-23\netbeans\extide\ant\lib\ant-junit4.jar" />
+    <property name="file.reference.okhttp-4.12.0.jar" value="okhttp-4.12.0.jar" />
+    <property name="java.class.path" value="C:\Users\jovan\OneDrive\Documenti\NetBeansProjects\Softveri\Pekara_Zajednicki\dist\Pekara_Zajednicki.jar;C:\Users\jovan\OneDrive\Documenti\NetBeansProjects\Softveri\hsqldb.jar;C:\Users\jovan\OneDrive\Documenti\NetBeansProjects\Softveri\mysql-connector-j-9.1.0.jar;C:\Users\jovan\OneDrive\Documenti\NetBeansProjects\Softveri\Pekara_Server\annotations-13.0.jar;C:\Users\jovan\OneDrive\Documenti\NetBeansProjects\Softveri\Pekara_Server\classmate-1.7.0.jar;C:\Users\jovan\OneDrive\Documenti\NetBeansProjects\Softveri\Pekara_Server\error_prone_annotations-2.33.0.jar;C:\Users\jovan\OneDrive\Documenti\NetBeansProjects\Softveri\Pekara_Server\httpclient5-5.3.1.jar;C:\Users\jovan\OneDrive\Documenti\NetBeansProjects\Softveri\Pekara_Server\httpcore5-5.2.4.jar;C:\Users\jovan\OneDrive\Documenti\NetBeansProjects\Softveri\Pekara_Server\httpcore5-h2-5.2.4.jar;C:\Users\jovan\OneDrive\Documenti\NetBeansProjects\Softveri\Pekara_Server\jackson-annotations-2.17.1.jar;C:\Users\jovan\OneDrive\Documenti\NetBeansProjects\Softveri\Pekara_Server\jackson-core-2.17.1.jar;C:\Users\jovan\OneDrive\Documenti\NetBeansProjects\Softveri\Pekara_Server\jackson-databind-2.17.1.jar;C:\Users\jovan\OneDrive\Documenti\NetBeansProjects\Softveri\Pekara_Server\jackson-datatype-jdk8-2.18.2.jar;C:\Users\jovan\OneDrive\Documenti\NetBeansProjects\Softveri\Pekara_Server\jackson-datatype-jsr310-2.18.2.jar;C:\Users\jovan\OneDrive\Documenti\NetBeansProjects\Softveri\Pekara_Server\jackson-module-kotlin-2.18.2.jar;C:\Users\jovan\OneDrive\Documenti\NetBeansProjects\Softveri\Pekara_Server\jsonschema-generator-4.38.0.jar;C:\Users\jovan\OneDrive\Documenti\NetBeansProjects\Softveri\Pekara_Server\jsonschema-module-jackson-4.38.0.jar;C:\Users\jovan\OneDrive\Documenti\NetBeansProjects\Softveri\Pekara_Server\kotlin-reflect-1.8.10.jar;C:\Users\jovan\OneDrive\Documenti\NetBeansProjects\Softveri\Pekara_Server\kotlin-stdlib-1.8.0.jar;C:\Users\jovan\OneDrive\Documenti\NetBeansProjects\Softveri\Pekara_Server\kotlin-stdlib-common-1.8.0.jar;C:\Users\jovan\OneDrive\Documenti\NetBeansProjects\Softveri\Pekara_Server\kotlin-stdlib-jdk7-1.8.0.jar;C:\Users\jovan\OneDrive\Documenti\NetBeansProjects\Softveri\Pekara_Server\kotlin-stdlib-jdk8-1.8.0.jar;C:\Users\jovan\OneDrive\Documenti\NetBeansProjects\Softveri\Pekara_Server\logging-interceptor-4.12.0.jar;C:\Users\jovan\OneDrive\Documenti\NetBeansProjects\Softveri\Pekara_Server\okhttp-4.12.0.jar;C:\Users\jovan\OneDrive\Documenti\NetBeansProjects\Softveri\Pekara_Server\okio-3.6.0.jar;C:\Users\jovan\OneDrive\Documenti\NetBeansProjects\Softveri\Pekara_Server\okio-jvm-3.6.0.jar;C:\Users\jovan\OneDrive\Documenti\NetBeansProjects\Softveri\Pekara_Server\openai-java-2.9.0.jar;C:\Users\jovan\OneDrive\Documenti\NetBeansProjects\Softveri\Pekara_Server\openai-java-client-okhttp-2.9.0.jar;C:\Users\jovan\OneDrive\Documenti\NetBeansProjects\Softveri\Pekara_Server\openai-java-core-2.9.0.jar;C:\Users\jovan\OneDrive\Documenti\NetBeansProjects\Softveri\Pekara_Server\slf4j-api-1.7.36.jar;C:\Users\jovan\OneDrive\Documenti\NetBeansProjects\Softveri\Pekara_Server\build\classes;C:\Program Files\NetBeans-23\netbeans\platform\modules\ext\junit-4.13.2.jar;C:\Program Files\NetBeans-23\netbeans\platform\modules\ext\hamcrest-core-1.3.jar;C:\Users\jovan\OneDrive\Documenti\NetBeansProjects\Softveri\hamcrest-core-1.3.jar;C:\Users\jovan\OneDrive\Documenti\NetBeansProjects\Softveri\Pekara_Server\build\test\classes;C:\Program Files\NetBeans-23\netbeans\extide\ant\lib\ant-launcher.jar;C:\Program Files\NetBeans-23\netbeans\extide\ant\lib\ant.jar;C:\Program Files\NetBeans-23\netbeans\extide\ant\lib\ant-junit.jar;C:\Program Files\NetBeans-23\netbeans\extide\ant\lib\ant-junit4.jar" />
     <property name="libs.javaee-web-api-6.0.maven-pom" value="" />
     <property name="java.vm.vendor" value="Oracle Corporation" />
     <property name="ap.supported.internal" value="true" />
@@ -394,7 +418,7 @@
     <property name="jlink.additionalmodules" value="" />
     <property name="libs.jakartaee-web-api-10.0.javadoc" value="C:\Program Files\NetBeans-23\netbeans\enterprise\docs\jakartaee10-doc-api.jar" />
     <property name="libs.jakartaee-web-api-8.0.classpath" value="C:\Program Files\NetBeans-23\netbeans\enterprise\modules\ext\jakarta.jakartaee-web-api-8.0.0.jar" />
-    <property name="javac.classpath" value="../Pekara_Zajednicki/dist/Pekara_Zajednicki.jar:../hsqldb.jar:../mysql-connector-j-9.1.0.jar" />
+    <property name="javac.classpath" value="../Pekara_Zajednicki/dist/Pekara_Zajednicki.jar:../hsqldb.jar:../mysql-connector-j-9.1.0.jar:annotations-13.0.jar:classmate-1.7.0.jar:error_prone_annotations-2.33.0.jar:httpclient5-5.3.1.jar:httpcore5-5.2.4.jar:httpcore5-h2-5.2.4.jar:jackson-annotations-2.17.1.jar:jackson-core-2.17.1.jar:jackson-databind-2.17.1.jar:jackson-datatype-jdk8-2.18.2.jar:jackson-datatype-jsr310-2.18.2.jar:jackson-module-kotlin-2.18.2.jar:jsonschema-generator-4.38.0.jar:jsonschema-module-jackson-4.38.0.jar:kotlin-reflect-1.8.10.jar:kotlin-stdlib-1.8.0.jar:kotlin-stdlib-common-1.8.0.jar:kotlin-stdlib-jdk7-1.8.0.jar:kotlin-stdlib-jdk8-1.8.0.jar:logging-interceptor-4.12.0.jar:okhttp-4.12.0.jar:okio-3.6.0.jar:okio-jvm-3.6.0.jar:openai-java-2.9.0.jar:openai-java-client-okhttp-2.9.0.jar:openai-java-core-2.9.0.jar:slf4j-api-1.7.36.jar" />
     <property name="dist.jlink.dir" value="dist/jlink" />
     <property name="nb.junit.batch" value="true" />
     <property name="libs.jakartaee-web-api-10.0.maven-pom" value="" />
@@ -409,6 +433,7 @@
     <property name="libs.javaee-endorsed-api-6.0.maven-pom" value="" />
     <property name="platform.java" value="C:\Program Files\Java\jdk-23/bin/java" />
     <property name="application.args" value="" />
+    <property name="file.reference.jackson-databind-2.17.1.jar" value="jackson-databind-2.17.1.jar" />
     <property name="org.xml.sax.driver" value="com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser" />
     <property name="libs.jakartaee-web-api-8.0.maven-pom" value="" />
     <property name="libs.eclipselink.src" value="" />
@@ -416,19 +441,21 @@
     <property name="libs.metro.javadoc" value="C:\Program Files\NetBeans-23\netbeans\enterprise\docs\webservices-api-javadoc.jar;C:\Program Files\NetBeans-23\netbeans\enterprise\docs\webservices-extra-javadoc.jar;C:\Program Files\NetBeans-23\netbeans\enterprise\docs\webservices-extra-api-javadoc.jar;C:\Program Files\NetBeans-23\netbeans\enterprise\docs\webservices-rt-javadoc.jar;C:\Program Files\NetBeans-23\netbeans\enterprise\docs\webservices-tools-javadoc.jar" />
     <property name="libs.jakartaee-web-api-9.0.src" value="" />
     <property name="libs.jakartaee-web-api-10.0.classpath" value="C:\Program Files\NetBeans-23\netbeans\enterprise\modules\ext\jakarta.jakartaee-web-api-10.0.0.jar" />
+    <property name="file.reference.kotlin-reflect-1.8.10.jar" value="kotlin-reflect-1.8.10.jar" />
     <property name="sun.awt.datatransfer.timeout" value="1000" />
     <property name="libs.javaee-web-api-7.0.src" value="" />
     <property name="libs.jakartaee-api-8.0.src" value="" />
     <property name="annotation.processing.run.all.processors" value="true" />
     <property name="junit.forkmode" value="perTest" />
     <property name="libs.jsp-compiler.classpath" value="C:\Program Files\NetBeans-23\netbeans\enterprise\ant\extra\jspcompile.jar" />
+    <property name="file.reference.openai-java-client-okhttp-2.9.0.jar" value="openai-java-client-okhttp-2.9.0.jar" />
     <property name="libs.javaee-endorsed-api-6.0.classpath" value="C:\Program Files\NetBeans-23\netbeans\enterprise\modules\ext\javaee6-endorsed\javax.annotation.jar;C:\Program Files\NetBeans-23\netbeans\enterprise\modules\ext\javaee6-endorsed\jaxb-api-osgi.jar;C:\Program Files\NetBeans-23\netbeans\enterprise\modules\ext\javaee6-endorsed\webservices-api-osgi.jar" />
   </properties>
   <testcase classname="so.PrijaviPekarTest" name="testPreconditionPogresanTip" time="0.006" />
-  <testcase classname="so.PrijaviPekarTest" name="testPreconditionNull" time="0.001" />
+  <testcase classname="so.PrijaviPekarTest" name="testPreconditionNull" time="0.0" />
   <testcase classname="so.PrijaviPekarTest" name="testPrijaviPogresniKredencijali" time="0.006" />
-  <testcase classname="so.PrijaviPekarTest" name="testPreconditionIspravan" time="0.001" />
-  <testcase classname="so.PrijaviPekarTest" name="testPrijaviUspesno" time="0.002" />
+  <testcase classname="so.PrijaviPekarTest" name="testPreconditionIspravan" time="0.0" />
+  <testcase classname="so.PrijaviPekarTest" name="testPrijaviUspesno" time="0.001" />
   <testcase classname="so.PrijaviPekarTest" name="testPrijaviNullBacaIzuzetak" time="0.001" />
   <system-out><![CDATA[Uspesno povezivanje sa bazom
 Memorijska baza uspesno inicijalizovana.

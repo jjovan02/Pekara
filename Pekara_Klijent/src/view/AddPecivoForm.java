@@ -129,7 +129,7 @@ public class AddPecivoForm extends javax.swing.JDialog {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(btnSacuvaj)
                     .addComponent(btnOtkazi))
-                .addContainerGap(22, Short.MAX_VALUE))
+                .addContainerGap(33, Short.MAX_VALUE))
         );
 
         pack();
@@ -162,7 +162,7 @@ public class AddPecivoForm extends javax.swing.JDialog {
         } catch (NumberFormatException ex) {
             JOptionPane.showMessageDialog(this,"Cena mora biti broj!","Greška", JOptionPane.ERROR_MESSAGE);
         } catch (Exception ex) {
-            JOptionPane.showMessageDialog(this,"Sistem ne može da zapamti pecivo.","Greška", JOptionPane.ERROR_MESSAGE);
+            JOptionPane.showMessageDialog(this,"Sistem ne može da zapamti pecivo: " + ex.getMessage(),"Greška", JOptionPane.ERROR_MESSAGE);
         }
 
     }//GEN-LAST:event_btnSacuvajActionPerformed
